@@ -1,0 +1,268 @@
+body {
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.name {
+  color: #4f5de4;
+  font-family: FiraGO;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.info {
+  color: #6a7a9b;
+  font-family: FiraGO;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.container {
+  width: 300px;
+}
+.div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 26px 28px;
+}
+
+#slider-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+
+#image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 26px 28px;
+  gap: 50px;
+}
+
+.slider-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.slider-circles {
+  display: flex;
+  justify-content: center;
+}
+.active {
+  background-color: #f57005;
+  border: 3px solid #d9d9d9;
+  margin-top: -3px;
+}
+.slider-div {
+  padding: 50px;
+  border-radius: 16px;
+  border: 1px solid #e0e3fd;
+  background: #fff;
+  width: 80%;
+}
+.slider-div img {
+  display: flex;
+  margin: auto;
+}
+.video-text {
+  color: #4f5de4;
+  font-family: FiraGO;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+}
+.lern {
+  color: #1a3365;
+  font-family: FiraGO;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.lecture {
+  background: #f1f2fd;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+}
+#lecture-container {
+  margin: 26px 28px;
+}
+fieldset {
+  border: none;
+  width: 350px;
+  padding: 40px 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 12px;
+  background: #fff;
+}
+legend {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none"><circle cx="75" cy="75" r="75" fill="%23DCDCDD"/></svg>')
+    no-repeat;
+  text-align: right;
+  background-size: 155px 151px;
+  height: 160px;
+  padding-right: 11px;
+  padding-top: 8px;
+}
+legend img {
+  margin: auto;
+  display: flex;
+  margin-left: 10px;
+}
+.time-div {
+  padding: 4px 8px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #4f5de4;
+  margin-top: -25%;
+  color: white;
+}
+fieldset h4 {
+  color: #1a3365;
+  font-family: FiraGO;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 70%;
+}
+.info-div {
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  gap: 48px;
+  border-radius: 8px;
+  background: #f1f2fd;
+  justify-content: space-between;
+}
+.info-name {
+  color: #1a3365;
+  font-family: FiraGO;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.some-text {
+  color: #98a3b9;
+  font-family: FiraGO;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.number-of-lecture {
+  color: #f57005;
+  font-family: FiraGO;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lecture-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.create-account {
+  background: #4f5de4;
+  display: flex;
+  flex-direction: column;
+  padding: 10% 20%;
+}
+
+.create-account h2 {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.account-text {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.account-button p {
+  color: #fbfbfc;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.account-button {
+  background-color: #f57005;
+  width: 200px;
+  padding-left: 10px;
+  border-radius: 4px;
+  margin-top: 10%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-button img {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+@media screen and (min-width: 780px) {
+  .div3 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 56px 88px;
+  }
+  #image-container {
+    flex-direction: row;
+    margin: 56px 88px;
+    gap: 30px;
+  }
+  #lecture-container {
+    margin: 56px 88px;
+  }
+  .lecture-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .create-account {
+    background: #4f5de4;
+    display: flex;
+    flex-direction: row;
+    padding: 7% 13%;
+    justify-content: space-between;
+  }
+
+  .div1 {
+    width: 50%;
+  }
+  .account-button {
+    width: 250px;
+  }
+}

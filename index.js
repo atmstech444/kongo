@@ -122,3 +122,63 @@ function resetFormInterval() {
 setActiveFormCircle(activeFormCircleIndex);
 resetFormInterval();
 showFormSlide(0);
+
+//mariami
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fieldsets = document.querySelectorAll(".fieldset");
+  let currentFieldsetIndex = 0;
+
+  const showFieldset = (index) => {
+    fieldsets.forEach((fieldset) => {
+      fieldset.style.display = "none";
+    });
+
+    fieldsets[index].style.display = "block";
+  };
+
+  const handleArrowClick = (direction) => {
+    if (direction === "left") {
+      currentFieldsetIndex =
+        currentFieldsetIndex > 0
+          ? currentFieldsetIndex - 1
+          : fieldsets.length - 1;
+    } else if (direction === "right") {
+      currentFieldsetIndex =
+        currentFieldsetIndex < fieldsets.length - 1
+          ? currentFieldsetIndex + 1
+          : 0;
+    }
+    showFieldset(currentFieldsetIndex);
+  };
+
+  const leftArrowBtn = document.querySelector(".slider-btn-left");
+  const rightArrowBtn = document.querySelector(".slider-btn-right");
+
+  leftArrowBtn.addEventListener("click", () => handleArrowClick("left"));
+  rightArrowBtn.addEventListener("click", () => handleArrowClick("right"));
+
+  showFieldset(currentFieldsetIndex);
+});
+
+//anri
+
+const sidebar = document.getElementById("sidebar");
+const sidebarTrigger = document.getElementById("sidebar__trigger");
+const sidebarCloseButton = document.getElementById("sidebar__close__button");
+
+function toggleSidebar() {
+  sidebar.classList.toggle("isClosed");
+}
+
+sidebarTrigger.addEventListener("click", toggleSidebar);
+sidebarCloseButton.addEventListener("click", toggleSidebar);
+
+document.addEventListener("click", (event) => {
+  const isClickInsideSidebar =
+    sidebar.contains(event.target) || sidebarTrigger.contains(event.target);
+
+  if (!isClickInsideSidebar && !sidebar.classList.contains("isClosed")) {
+    toggleSidebar();
+  }
+});

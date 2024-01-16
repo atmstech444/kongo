@@ -182,3 +182,15 @@ document.addEventListener("click", (event) => {
     toggleSidebar();
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.querySelector(".header-section");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      header.style.backgroundColor = "#2a254d";
+    } else {
+      header.style.backgroundColor = "transparent";
+    }
+  });
+});

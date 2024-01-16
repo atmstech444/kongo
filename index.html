@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <link
+      href="https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- anri  -->
@@ -32,6 +36,14 @@
         <li>კონტაქტი</li>
         <button><img src="images/arrow.svg" alt="" /></button>
       </div>
+      <div class="sidebar-link">
+        <li>ავტორიზაცია</li>
+        <button><img src="images/arrow.svg" alt="" /></button>
+      </div>
+      <div class="sidebar-link">
+        <li>რეგისტრაცია</li>
+        <button><img src="images/arrow.svg" alt="" /></button>
+      </div>
       <p class="sidebar-info">
         <img src="images/Location.svg" alt="Location" />გამრეკელის 22
       </p>
@@ -52,17 +64,26 @@
             <img src="images/logo.gif" alt="kongo logo" />
           </div>
           <div class="nav-links">
-            <li>მთავარი</li>
-            <li>ჩვენ შესახებ</li>
-            <li>სერვისები</li>
-            <li>კონტაქტი</li>
+            <a href="#">მთავარი</a>
+            <a href="#info">ჩვენ შესახებ</a>
+            <a href="#courses">სერვისები</a>
+            <a href="#contact">კონტაქტი</a>
           </div>
           <div class="menu-container">
             <button id="sidebar__trigger" class="sidebar__button">
               <img src="images/Menu.svg" alt="menu" />
             </button>
-            <div>
-              <img src="images/Profile.svg" alt="profile logo" />
+            <!-- <img
+              class="profile-icon"
+              src="images/Profile.svg"
+              alt="profile logo"
+            /> -->
+            <div class="desktop-nav-buttons">
+              <button class="header-button authorization-button">
+                <span class="curve"></span>
+                ავტორიზაცია
+              </button>
+              <button class="header-button">რეგისტრაცია</button>
             </div>
           </div>
         </nav>
@@ -73,14 +94,14 @@
             <h1>საგანმანათლებლო თავგადასავალი მაიმუნ კონგოსთან</h1>
           </div>
           <div class="title-buttons-container">
-            <button>
+            <a href="#info">
               <span class="curve"></span>გაიგე მეტი
               <img src="images/arrow.svg" />
-            </button>
-            <button style="border: 1px solid #fff">
+            </a>
+            <a href="#slider-container" style="border: 1px solid #fff">
               <span class="curve"></span>კურსის მოძებნა
               <img src="images/arrow.svg" />
-            </button>
+            </a>
           </div>
           <img class="curled-arrow-img" src="images/curled-arrow.png" alt="" />
         </div>
@@ -109,7 +130,7 @@
       </div>
     </section>
 
-    <section class="courses-section">
+    <section id="courses" class="courses-section">
       <div class="courses-container">
         <div class="course-content">
           <div>
@@ -169,7 +190,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us-section">
+    <section id="info" class="about-us-section">
       <div class="about-us-container">
         <img src="images/kongo-studying.png" alt="kongo studying" />
         <div class="about-us-info">
@@ -511,7 +532,7 @@
         </button>
       </div>
     </section>
-    <section class="contact-info">
+    <section id="contact" class="contact-info">
       <h4 class="subheader">კონტაქტი</h4>
       <h2 class="subheader-2">გამოგვიგზავნე შეტყობინება</h2>
       <main class="main-layout">

@@ -59,7 +59,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   margin: 26px 28px;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -78,17 +78,13 @@ body {
 }
 .active {
   background-color: #f57005;
-  border: 3px solid #d9d9d9;
-  margin-top: -2px;
-  width: 23px;
-  height: 23px;
 }
 .slider-div {
   padding: 50px;
   border-radius: 16px;
   border: 1px solid #e0e3fd;
   background: #fff;
-  width: 350px;
+  width: 100%;
 }
 .slider-div img {
   display: flex;
@@ -440,6 +436,7 @@ legend img {
   .feedback {
     padding: 70px 30px;
   }
+
   .subheader-2 {
     font-size: 28px;
   }
@@ -454,6 +451,7 @@ legend img {
     align-items: start;
     gap: 15px;
   }
+
   .feedback-text {
     font-size: 14px;
   }
@@ -649,9 +647,20 @@ a {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
   }
+
   .footer-text {
     width: 250px;
     text-align: center;
+  }
+}
+@media (min-width: 1300px) {
+  .slider-div {
+    width: 200px;
+  }
+}
+@media (min-width: 1640px) {
+  .slider-div {
+    width: 300px;
   }
 }
 
@@ -662,6 +671,7 @@ a {
     justify-items: start;
     padding: 72px 100px;
   }
+
   .footer-text {
     width: 250px;
     text-align: start;

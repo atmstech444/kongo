@@ -555,6 +555,10 @@ legend img {
   cursor: pointer;
 }
 
+.contact-image-container {
+  width: 543px;
+}
+
 .contact-img {
   width: 100%;
 }
@@ -574,6 +578,9 @@ legend img {
   }
   .input-icon {
     left: 2%;
+  }
+  .contact-image-container {
+    width: 90%;
   }
 }
 

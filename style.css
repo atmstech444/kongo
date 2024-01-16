@@ -1218,8 +1218,13 @@ a {
     justify-items: center;
   }
 
+  .menu-container {
+    padding-right: 0;
+  }
+
   .header-button {
     font-size: 12px;
+    padding: 5px 10px;
   }
 
   .header-section nav a {

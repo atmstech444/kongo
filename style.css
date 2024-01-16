@@ -709,6 +709,10 @@ a {
   }
 }
 
+#sidebar__trigger {
+  display: none;
+}
+
 @media screen and (min-width: 1441px) {
   .kongo-image-container {
     width: 500px;
@@ -1126,6 +1130,10 @@ a {
     width: 100%;
   }
 
+  #sidebar__trigger {
+    display: block;
+  }
+
   .bar {
     display: block;
     background: transparent;
@@ -1239,7 +1247,9 @@ a {
 }
 
 .sidebar-info img {
-  margin-right: 30px;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
 }
 
 .sidebar li {

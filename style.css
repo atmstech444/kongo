@@ -30,7 +30,7 @@ body {
 .div3 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #fff;
   padding: 26px 28px;
   gap: 40px;
@@ -45,10 +45,11 @@ body {
 #image-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   margin: 26px 28px;
-  gap: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .slider-circle {
@@ -68,13 +69,15 @@ body {
   background-color: #f57005;
   border: 3px solid #d9d9d9;
   margin-top: -3px;
+  width: 23px;
+  height: 23px;
 }
 .slider-div {
   padding: 50px;
   border-radius: 16px;
   border: 1px solid #e0e3fd;
   background: #fff;
-  width: 80%;
+  width: 350px;
 }
 .slider-div img {
   display: flex;
@@ -208,6 +211,7 @@ legend img {
   flex-direction: column;
   padding: 10% 20%;
   margin-bottom: 100px;
+  gap: 30px;
 }
 
 .create-account h2 {
@@ -223,6 +227,8 @@ legend img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 70%;
+  margin-top: 30px;
 }
 .account-button p {
   color: #fbfbfc;
@@ -232,14 +238,21 @@ legend img {
   line-height: normal;
 }
 .account-button {
-  background-color: #f57005;
-  width: 200px;
-  padding-left: 10px;
-  border-radius: 4px;
-  margin-top: 10%;
-  height: 60px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  background-color: #f57005;
+  width: 165px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  height: 45px;
+  margin: auto 0;
 }
 
 .account-button img {
@@ -251,12 +264,14 @@ legend img {
   .div3 {
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 56px 88px;
+    padding: 56px 100px;
+  }
+  .account-text {
+    width: 470px;
   }
   #image-container {
     flex-direction: row;
-    margin: 56px 88px;
-    gap: 30px;
+    margin: 56px 188px;
   }
   #lecture-container {
     margin: 56px 88px;
@@ -264,7 +279,7 @@ legend img {
   .lecture-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .create-account {
     background: #4f5de4;
@@ -275,13 +290,9 @@ legend img {
   }
 
   .div1 {
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-  }
-  .account-button {
-    width: 250px;
   }
 }
 

@@ -1090,7 +1090,11 @@ a {
 .curled-arrow-img,
 .graduation-cap-img,
 .earth-img,
-.book-img {
+.book-img,
+.books-pencils,
+.blue-pencil,
+.red-pencil,
+.pencil-eraser-img {
   -webkit-animation-name: float-bob-y-2;
   animation-name: float-bob-y-2;
   -webkit-animation-duration: 4s;
@@ -1107,6 +1111,11 @@ a {
   top: 135px;
 }
 
+.blue-pencil {
+  left: -280px;
+  top: 200px;
+}
+
 .graduation-cap-img {
   top: 40px;
 }
@@ -1119,8 +1128,26 @@ a {
   left: 350px;
 }
 
+.star-img-3 {
+  position: absolute;
+  left: -400px;
+}
+.star-img-4 {
+  position: absolute;
+  bottom: 100px;
+  left: -100px;
+}
+
+.pencil-eraser-img {
+  left: -400px;
+  bottom: 0px;
+  rotate: -45deg;
+}
+
 .star-img,
-.star-img-2 {
+.star-img-2,
+.star-img-3,
+.star-img-4 {
   -webkit-animation: blinker2 3s infinite linear;
   animation: blinker2 3s infinite linear;
   position: absolute;
@@ -1595,4 +1622,10 @@ a {
     width: 640px;
     height: 640px;
   }
+}
+
+.books-pencils {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
 }

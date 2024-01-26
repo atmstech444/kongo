@@ -1091,7 +1091,7 @@ a {
 .graduation-cap-img,
 .earth-img,
 .book-img,
-.books-pencils,
+.division-img,
 .blue-pencil,
 .red-pencil,
 .pencil-eraser-img {
@@ -1114,6 +1114,11 @@ a {
 .blue-pencil {
   left: -280px;
   top: 200px;
+}
+
+.division-img {
+  bottom: 40px;
+  left: -30px;
 }
 
 .graduation-cap-img {
@@ -1350,6 +1355,10 @@ a {
     left: 60px;
   }
 
+  .division-img {
+    bottom: 0;
+    left: -50px;
+  }
   .graduation-cap-img {
     left: -50px;
     top: -10px;

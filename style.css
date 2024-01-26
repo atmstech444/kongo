@@ -1633,6 +1633,24 @@ a {
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .blue-pencil {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .curled-arrow-img {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+  .header-section nav a {
+    font-size: 10px;
+  }
+}
+
 .books-pencils {
   position: absolute;
   bottom: 0;

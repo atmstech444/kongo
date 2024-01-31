@@ -11,10 +11,12 @@
     />
   </head>
   <body>
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
     <div class="sidebar isClosed" id="sidebar">
       <div class="sidebar-logo-container">
         <img src="images/logo.gif" width="auto" height="70" alt="kongo logo" />
-        <button class="close-button" id="sidebar__close__button">
+        <button class="close-button custom-hover" id="sidebar__close__button">
           <img src="images/x.svg" alt="close" />
         </button>
       </div>
@@ -62,27 +64,28 @@
             <img src="images/logo.gif" alt="kongo logo" />
           </a>
           <div class="nav-links">
-            <a href="#">მთავარი</a>
-            <a href="#info">ჩვენ შესახებ</a>
-            <a href="#courses">სერვისები</a>
-            <a href="#contact">კონტაქტი</a>
+            <a href="#" class="custom-hover">მთავარი</a>
+            <a href="#info" class="custom-hover">ჩვენ შესახებ</a>
+            <a href="#courses" class="custom-hover">სერვისები</a>
+            <a href="#contact" class="custom-hover">კონტაქტი</a>
           </div>
           <div class="menu-container">
-            <button id="sidebar__trigger" class="sidebar__button">
+            <button id="sidebar__trigger" class="sidebar__button custom-hover">
               <img src="images/Menu.svg" width="32" height="32" alt="menu" />
             </button>
 
             <div class="desktop-nav-buttons">
-              <button class="header-button authorization-button">
+              <button class="header-button authorization-button custom-hover">
                 <span class="curve"></span>
                 ავტორიზაცია
               </button>
-              <button class="header-button">რეგისტრაცია</button>
+              <button class="header-button custom-hover">რეგისტრაცია</button>
             </div>
           </div>
         </nav>
       </header>
       <div class="info-section">
+        <img src="/images/banner-bg-1.png" alt="banner" class="banner" />
         <div class="hero-banner__bg-shape1 hero-banner__bg-shape1 wow zoomIn">
           <div class="hero-banner__bg-round">
             <div class="hero-banner__bg-round-border"></div>
@@ -93,11 +96,15 @@
             <h1>საგანმანათლებლო თავგადასავალი მაიმუნ კონგოსთან</h1>
           </div>
           <div class="title-buttons-container">
-            <a href="#info">
+            <a href="#info" class="custom-hover">
               <span class="curve"></span>გაიგე მეტი
               <img src="images/arrow.svg" />
             </a>
-            <a href="#slider-container" style="border: 1px solid #fff">
+            <a
+              href="#slider-container"
+              class="custom-hover"
+              style="border: 1px solid #fff"
+            >
               <span class="curve"></span>კურსის მოძებნა
               <img src="images/arrow.svg" />
             </a>
@@ -147,10 +154,17 @@
     </section>
 
     <section id="courses" class="courses-section">
+      <!-- <img src="images/service-bg-1.png" alt="lines-bg" class="services-line" /> -->
       <div class="courses-container">
         <div class="course-content">
-          <div>
-            <img src="images/books.png" alt="books logo" />
+          <div class="course-content-details">
+            <div class="course-content-logo">
+              <img
+                src="images/education.png"
+                alt="education"
+                class="course-education-img"
+              />
+            </div>
             <h3>მათემატიკა</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
@@ -161,10 +175,27 @@
               <img src="images/arrow-blue.svg" alt="blue arrow right"
             /></a>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 118 129"
+            fill="none"
+            class="course-content-svg"
+          >
+            <path
+              d="M0.582052 143.759C135.395 113.682 145.584 0.974413 145.584 0.974413L173.881 89.6286C173.881 89.6286 0.582054 322.604 0.582052 143.759Z"
+              fill="#F1F2FD"
+            ></path>
+          </svg>
         </div>
         <div class="course-content">
           <div>
-            <img src="images/books.png" alt="books logo" />
+            <div class="course-content-logo">
+              <img
+                src="images/education.png"
+                alt="education"
+                class="course-education-img"
+              />
+            </div>
             <h3>ჭადრაკი</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
@@ -175,10 +206,27 @@
               <img src="images/arrow-blue.svg" alt="blue arrow right"
             /></a>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 118 129"
+            fill="none"
+            class="course-content-svg"
+          >
+            <path
+              d="M0.582052 143.759C135.395 113.682 145.584 0.974413 145.584 0.974413L173.881 89.6286C173.881 89.6286 0.582054 322.604 0.582052 143.759Z"
+              fill="#F1F2FD"
+            ></path>
+          </svg>
         </div>
         <div class="course-content">
           <div>
-            <img src="images/books.png" alt="books logo" />
+            <div class="course-content-logo">
+              <img
+                src="images/education.png"
+                alt="education"
+                class="course-education-img"
+              />
+            </div>
             <h3>ქართული</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
@@ -189,10 +237,27 @@
               <img src="images/arrow-blue.svg" alt="blue arrow right"
             /></a>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 118 129"
+            fill="none"
+            class="course-content-svg"
+          >
+            <path
+              d="M0.582052 143.759C135.395 113.682 145.584 0.974413 145.584 0.974413L173.881 89.6286C173.881 89.6286 0.582054 322.604 0.582052 143.759Z"
+              fill="#F1F2FD"
+            ></path>
+          </svg>
         </div>
         <div class="course-content">
           <div>
-            <img src="images/books.png" alt="books logo" />
+            <div class="course-content-logo">
+              <img
+                src="images/education.png"
+                alt="education"
+                class="course-education-img"
+              />
+            </div>
             <h3>ინგლისური</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
@@ -203,6 +268,17 @@
               <img src="images/arrow-blue.svg" alt="blue arrow right"
             /></a>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 118 129"
+            fill="none"
+            class="course-content-svg"
+          >
+            <path
+              d="M0.582052 143.759C135.395 113.682 145.584 0.974413 145.584 0.974413L173.881 89.6286C173.881 89.6286 0.582054 322.604 0.582052 143.759Z"
+              fill="#F1F2FD"
+            ></path>
+          </svg>
         </div>
       </div>
     </section>
@@ -454,7 +530,7 @@
           ინექციური იუმორისა და არადამახასიათებელისგან
         </p>
       </div>
-      <button class="account-button">
+      <button class="account-button custom-hover">
         <p>შემოგვიერთდი</p>
         <img src="./images/arrowright2.svg" alt="arrowright" />
       </button>
@@ -607,7 +683,7 @@
               class="input-icon4"
             />
           </div>
-          <button class="submit-btn">
+          <button class="submit-btn custom-hover">
             <p>გაგზავნა</p>
             <img src="./images/arrowright2.svg" alt="arrowright" />
           </button>
@@ -623,7 +699,7 @@
       </main>
     </section>
     <footer>
-      <main class="footer-wrapper">
+      <main class="footer-wrapper footer-bg">
         <div class="grid-item">
           <img src="./images/giflogo.gif" alt="logo" class="gif-logo" />
           <div class="footer-text">
@@ -667,7 +743,7 @@
         </div>
       </main>
       <div class="rights-div">
-        <p class="rights">all rights reserved Copyright 2024</p>
+        <p class="rights">&#169; all rights reserved Copyright 2024</p>
       </div>
     </footer>
 

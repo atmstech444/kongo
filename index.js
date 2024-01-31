@@ -194,3 +194,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("mousemove", (e) => {
+  const cursor = document.querySelector(".custom-cursor__cursor");
+  const cursorTwo = document.querySelector(".custom-cursor__cursor-two");
+
+  // Update the position of the cursor elements based on the mouse coordinates
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+
+  cursorTwo.style.left = e.clientX + "px";
+  cursorTwo.style.top = e.clientY + "px";
+});
+
+const cursor = document.querySelector(".custom-cursor__cursor");
+const cursorTwo = document.querySelector(".custom-cursor__cursor-two");
+
+const hoverElements = document.querySelectorAll(".custom-hover");
+
+hoverElements.forEach((element) => {
+  element.addEventListener("mouseenter", () => {
+    cursor.classList.add("custom-cursor__hover");
+    cursorTwo.classList.add("custom-cursor__innerhover");
+  });
+
+  element.addEventListener("mouseleave", () => {
+    cursor.classList.remove("custom-cursor__hover");
+    cursorTwo.classList.remove("custom-cursor__innerhover");
+  });
+});

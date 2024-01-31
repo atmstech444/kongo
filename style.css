@@ -49,9 +49,9 @@ body {
 .div3 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #fff;
-  padding: 26px 28px;
+  /* padding: 26px 28px; */
   gap: 40px;
 }
 
@@ -279,7 +279,7 @@ legend img {
   .div3 {
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 56px 100px;
+    padding: 56px 135px;
   }
   .account-text {
     width: 470px;
@@ -300,7 +300,7 @@ legend img {
     background: #4f5de4;
     display: flex;
     flex-direction: row;
-    padding: 7% 13%;
+    padding: 7% 135px;
     justify-content: space-between;
   }
 
@@ -535,11 +535,14 @@ legend img {
 }
 
 .main-layout {
+  padding: 0 135px;
+  padding-bottom: 70px;
   margin-top: 100px;
   display: flex;
   gap: 50px;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .input-title,
@@ -601,7 +604,6 @@ legend img {
 
 /**************FOOTER**************/
 .footer-wrapper {
-  margin-top: 70px;
   background-color: #2a254d;
   padding: 72px 150px;
   display: grid;
@@ -775,7 +777,6 @@ a {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    margin-right: 100px;
     margin-top: 40px;
     z-index: 10;
   }
@@ -791,16 +792,6 @@ a {
   color: #fff;
 }
 
-/* .header-section {
-  padding: 0px 72px;
-}
-
-.header-section nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-} */
 
 .header-section {
   position: fixed;
@@ -817,7 +808,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 135px;
 }
 
 .menu-container {
@@ -825,7 +816,7 @@ a {
   height: 100%;
   align-items: center;
   gap: 10px;
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 
 .bar {
@@ -845,7 +836,7 @@ a {
 }
 
 .header-section nav a:not(:first-child) {
-  margin-left: 24px;
+  margin-left: 55px;
 }
 
 .header-section li:hover {
@@ -877,8 +868,8 @@ a {
   align-items: center;
   justify-content: space-between;
   padding-top: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 135px;
+  padding-right: 135px;
   height: 100%;
   position: relative;
   background-color: var(--eduact-base);
@@ -906,9 +897,7 @@ a {
   cursor: pointer;
 }
 
-.about-us-section .about-us-container {
-  padding: 0 72px;
-}
+
 
 .info-section .title-container a:first-child {
   display: inline-block;
@@ -1029,7 +1018,7 @@ a {
 }
 
 .courses-section {
-  padding: 72px 100px;
+  padding: 72px 135px;
   position: relative;
   background-image: url("images/service-bg-1.png");
   background-position: center;
@@ -1086,7 +1075,7 @@ a {
 }
 
 .about-us-section {
-  padding: 72px 100px;
+  padding: 72px 135px;
 }
 
 .about-us-section .about-us-container {
@@ -1233,13 +1222,13 @@ a {
   }
 
   .kongo-image-container {
-    width: 350px;
-    height: 350px;
+    width: 430px;
+    height: 430px;
   }
 
   .kongo-image-container img {
-    width: 320px;
-    height: 320px;
+    width: 387px;
+    height: 387px;
   }
 
   .courses-container .course-content {

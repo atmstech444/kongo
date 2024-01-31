@@ -541,9 +541,11 @@ legend img {
   display: flex;
   gap: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
 }
+
+
 
 .input-title,
 .input-message {
@@ -768,7 +770,8 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 1441px) {
+
+@media screen and (min-width: 1441px)  {
   .kongo-image-container {
     width: 500px;
     height: 500px;
@@ -780,6 +783,8 @@ a {
     margin-top: 40px;
     z-index: 10;
   }
+  
+
   .banner {
     height: auto;
   }
@@ -816,7 +821,6 @@ a {
   height: 100%;
   align-items: center;
   gap: 10px;
-  /* padding-right: 100px; */
 }
 
 .bar {
@@ -848,19 +852,56 @@ a {
   width: 59px;
   height: 47px;
 }
-
 .kongo-image-container {
-  width: 500px;
-  height: 500px;
   border-radius: 50%;
   background: linear-gradient(133deg, #f57005 15.88%, #ae84c0 86.24%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.kongo-image-container img {
-  width: 450px;
-  height: 450px;
+
+.earth-img {
+  left: 500px;
+}
+
+.book-img {
+  bottom: 20px;
+  left: 500px;
+}
+
+@media  screen and (min-width: 1700px) {
+  .kongo-image-container {
+    width: 620px;
+    height: 620px;
+  }
+
+  .kongo-image-container img {
+    width: 550px;
+    height: 550px;
+  }
+  
+}
+
+@media screen and (max-width: 1599px) {
+  .earth-img {
+    left: 360px;
+  }
+
+  .book-img {
+    bottom: 20px;
+    left: 350px;
+  }
+  
+  
+  .kongo-image-container {
+    width: 500px;
+    height: 500px;
+
+  }
+  .kongo-image-container img {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 .info-section {
@@ -1088,7 +1129,6 @@ a {
 .about-us-section .about-us-container .about-us-info {
   max-width: 634px;
   justify-self: end;
-  padding-right: 72px;
 }
 
 .about-us-section .about-us-container .about-us-info h3 {
@@ -1148,14 +1188,7 @@ a {
 .graduation-cap-img {
   top: 40px;
 }
-.earth-img {
-  left: 360px;
-}
 
-.book-img {
-  bottom: 20px;
-  left: 350px;
-}
 
 .star-img-3 {
   position: absolute;

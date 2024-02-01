@@ -44,18 +44,20 @@
         <li>რეგისტრაცია</li>
         <button><img src="images/arrow.svg" alt="" /></button>
       </div>
-      <p class="sidebar-info">
-        <img src="images/Location.svg" alt="Location" />გამრეკელის 22
-      </p>
-      <p class="sidebar-info">
-        <img src="images/Message.svg" alt="Location" />kontact@kongo.ge
-      </p>
-      <p class="sidebar-info">
-        <img src="images/Call.svg" alt="Location" />554 - 654 - 987
-      </p>
-      <p class="sidebar-info">
-        <img src="images/facebook.svg" alt="Location" />Facebook.com
-      </p>
+      <div class="sidebar-info-container">
+        <p class="sidebar-info">
+          <img src="images/Location.svg" alt="Location" />გამრეკელის 22
+        </p>
+        <p class="sidebar-info">
+          <img src="images/Message.svg" alt="Location" />kontact@kongo.ge
+        </p>
+        <p class="sidebar-info">
+          <img src="images/Call.svg" alt="Location" />554 - 654 - 987
+        </p>
+        <p class="sidebar-info">
+          <img src="images/facebook.svg" alt="Location" />Facebook.com
+        </p>
+      </div>
     </div>
     <section class="main-section">
       <header class="header-section">
@@ -475,20 +477,40 @@
     <div class="create-account">
       <div class="div1">
         <h2>შექმენი შენი უფასო ანგარიში</h2>
-        <p class="account-text">
-          ასე რომ, გენერირებული Lorem Ipsum ყოველთვის თავისუფალია გამეორებისგან,
-          ინექციური იუმორისა და არადამახასიათებელისგან
-        </p>
+        <div class="account-text">
+          <p>
+            ასე რომ, გენერირებული Lorem Ipsum ყოველთვის თავისუფალია
+            გამეორებისგან, ინექციური იუმორისა და არადამახასიათებელისგან
+          </p>
+
+          <div class="counter-triangle"></div>
+        </div>
+        <img
+          class="counter-dot"
+          src="images/counter-dot.png"
+          alt="counter dot"
+          width="100"
+          height="100"
+        />
+        <div>
+          <button
+            style="padding: 20px 30px"
+            class="header-button authorization-button mobile-account-button-2 custom-hover"
+          >
+            <span class="curve"></span>
+            შემოგვიერთდი
+            <img src="./images/arrowright2.svg" alt="arrowright" />
+          </button>
+        </div>
       </div>
-      <div class="desktop-nav-buttons">
-        <button
-          class="header-button authorization-button custom-hover custom-hover"
-        >
-          <span class="curve"></span>
-          შემოგვიერთდი
-          <img src="./images/arrowright2.svg" alt="arrowright" />
-        </button>
-      </div>
+      <button
+        style="padding: 10px 20px"
+        class="header-button authorization-button account-button-2 custom-hover custom-hover"
+      >
+        <span class="curve"></span>
+        შემოგვიერთდი
+        <img src="./images/arrowright2.svg" alt="arrowright" />
+      </button>
     </div>
 
     <!-- mariami -->
@@ -518,64 +540,26 @@
     <section class="feedback">
       <h4 class="subheader">შეფასება</h4>
       <h2 class="subheader-2">მოსწავლეების გამოხმაურება</h2>
-      <fieldset class="fieldset" id="fieldset1">
-        <legend class="legend">
-          <img src="./images/profile.png" alt="profile" />
-        </legend>
-        <div class="feedback-text">
-          მოქნილი კლასები გულისხმობს ცოდნის ან უნარების შეძენის პროცესს ციფრული
-          ტექნოლოგიებისა და ინტერნეტის გამოყენებით. მოქნილი კლასები გულისხმობს
-          ცოდნის ან უნარების შეძენის პროცესს ციფრული ტექნოლოგიებისა და
-          ინტერნეტის გამოყენებით.
-        </div>
-        <div class="additional-info">
-          <div>
-            <p class="student">გიორგი გვარიშვილი</p>
-            <span class="span">მოსწავლე</span>
+      <!-- feedback -->
+      <div>
+        <div>
+          <div class="testimonial-text-container">
+            <img
+              src="/images/testimonial-1.png"
+              style="border-radius: 50%; margin-top: -70px"
+              alt="testimonial"
+            />
+            <p>
+              მოქნილი კლასები გულისხმობს ცოდნის ან უნარების შეძენის პროცესს
+              ციფრული ტექნოლოგიებისა და ინტერნეტის გამოყენებით. მოქნილი კლასები
+              გულისხმობს ცოდნის ან უნარების შეძენის პროცესს ციფრული
+              ტექნოლოგიებისა და ინტერნეტის გამოყენებით.
+            </p>
+
+            <p class="testimonial-author">გიორგი გვარიშვილი</p>
+            <span class="testimonial-author-position">მოსწავლე</span>
           </div>
         </div>
-      </fieldset>
-      <fieldset class="fieldset" id="fieldset2">
-        <legend class="legend">
-          <img src="./images/profile.png" alt="profile" />
-        </legend>
-        <div class="feedback-text">
-          მოქნილი კლასები გულისხმობს ცოდნის ან უნარების შეძენის პროცესს ციფრული
-          ტექნოლოგიებისა და ინტერნეტის გამოყენებით. მოქნილი კლასები გულისხმობს
-          ცოდნის ან უნარების შეძენის პროცესს ციფრული ტექნოლოგიებისა და
-          ინტერნეტის გამოყენებით.
-        </div>
-        <div class="additional-info">
-          <div>
-            <p class="student">გიორგი გვარიშვილი</p>
-            <span class="span">მოსწავლე2</span>
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="fieldset" id="fieldset2">
-        <legend class="legend">
-          <img src="./images/profile.png" alt="profile" />
-        </legend>
-        <div class="feedback-text">
-          მოქნილი კლასები გულისხმობს ცოდნის ან უნარების შეძენის პროცესს ციფრული
-          ტექნოლოგიებისა და ინტერნეტის გამოყენებით. მოქნილი კლასები გულისხმობს
-          ცოდნის ან უნარების შეძენის პროცესს ციფრული ტექნოლოგიებისა და
-          ინტერნეტის გამოყენებით.
-        </div>
-        <div class="additional-info">
-          <div>
-            <p class="student">გიორგი გვარიშვილი</p>
-            <span class="span">მოსწავლე3</span>
-          </div>
-        </div>
-      </fieldset>
-      <div class="slider-btn-div">
-        <button class="slider-btn slider-btn-left">
-          <img src="./images/arrowleft.svg" alt="arrowleft" />
-        </button>
-        <button class="slider-btn slider-btn-right">
-          <img src="./images/arrowright.svg" alt="arrowright" />
-        </button>
       </div>
     </section>
     <section id="contact" class="contact-info">
@@ -685,7 +669,7 @@
           <h2 class="footer-title">დაგვიკავშირდი</h2>
           <div class="footer-flex-cont">
             <img src="./images/Location.svg" alt="loc" />
-            <p>გამრეკელის 22</p>
+            <p>გამრეკელის 19</p>
           </div>
           <div class="footer-flex-cont">
             <img src="./images/orangechat.svg" alt="loc" />

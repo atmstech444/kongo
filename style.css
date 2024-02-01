@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
-  /* padding: 26px 28px; */
+
   gap: 40px;
 }
 
@@ -646,7 +646,7 @@ a {
 /***********RESPONSIVE**********/
 @media (max-width: 1299px) {
   .footer-wrapper {
-    padding: 72px 0px;
+    padding: 72px 135px;
   }
   #image-container {
     justify-content: left;
@@ -657,7 +657,6 @@ a {
   .footer-wrapper {
     /* padding: 72px 30px; */
     justify-items: start;
-    padding-left: 30px;
   }
 }
 
@@ -809,6 +808,23 @@ a {
   padding: 0 135px;
 }
 
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-left: 135px;
+  padding-right: 135px;
+  height: 100%;
+  position: relative;
+  background-color: var(--eduact-base);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+  overflow: hidden;
+  z-index: 2;
+}
+
 .menu-container {
   display: flex;
   height: 100%;
@@ -862,6 +878,44 @@ a {
   left: 500px;
 }
 
+.hero-banner__bg-shape1 {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  width: 759px;
+  height: 759px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 54px 24px 39px 0px rgba(var(--eduact-black2-rgb), 0.02);
+}
+
+.courses-section {
+  padding: 72px 135px;
+  position: relative;
+  background-image: url("images/service-bg-1.png");
+  background-position: center;
+  z-index: 1;
+}
+
+.about-us-section {
+  padding: 72px 135px;
+}
+
+.lecture-card {
+  width: 500px;
+  background-color: #fff;
+  min-height: 300px;
+  position: relative;
+  padding: 28px 30px 30px;
+  box-shadow: 11px 15px 30px 0px rgba(128, 137, 225, 0.1);
+  border: 1px solid transparent;
+  border-radius: 14px;
+}
+
 @media screen and (min-width: 1700px) {
   .kongo-image-container {
     width: 620px;
@@ -871,6 +925,84 @@ a {
   .kongo-image-container img {
     width: 550px;
     height: 550px;
+  }
+}
+
+@media screen and (min-width: 1875px) {
+  .header-section nav {
+    padding: 0 260px;
+  }
+
+  .footer-wrapper {
+    padding: 72px 260px;
+  }
+
+  .main-layout {
+    padding: 0 260px;
+    margin-bottom: 70px;
+  }
+
+  .create-account {
+    padding: 7% 260px;
+  }
+
+  #lecture-container {
+    margin: 56px 260px;
+  }
+
+  .lecture-card {
+    width: 100%;
+  }
+
+  .div3 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 56px 260px;
+  }
+
+  #image-container {
+    flex-direction: row;
+    margin: 56px 260px;
+    justify-content: space-between;
+  }
+
+  .info-section {
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  .hero-banner__bg-shape1 {
+    left: 150px;
+  }
+
+  .kongo-image-container {
+    width: 540px;
+    height: 540px;
+  }
+
+  .kongo-image-container img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .courses-section {
+    padding: 72px 260px;
+  }
+
+  .about-us-section {
+    padding: 72px 260px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .kongo-image-container {
+    width: 600px;
+    height: 600px;
+  }
+
+  .kongo-image-container img {
+    width: 560px;
+    height: 560px;
   }
 }
 
@@ -892,23 +1024,6 @@ a {
     width: 450px;
     height: 450px;
   }
-}
-
-.info-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 100px;
-  padding-left: 135px;
-  padding-right: 135px;
-  height: 100%;
-  position: relative;
-  background-color: var(--eduact-base);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
-  overflow: hidden;
-  z-index: 2;
 }
 
 .info-section .title-container {
@@ -1046,14 +1161,6 @@ a {
   padding-top: 40px;
 }
 
-.courses-section {
-  padding: 72px 135px;
-  position: relative;
-  background-image: url("images/service-bg-1.png");
-  background-position: center;
-  z-index: 1;
-}
-
 .services-line {
   position: absolute;
   top: -140px;
@@ -1101,10 +1208,6 @@ a {
   width: 12px;
   height: 12px;
   margin-left: 10px;
-}
-
-.about-us-section {
-  padding: 72px 135px;
 }
 
 .about-us-section .about-us-container {
@@ -1302,6 +1405,7 @@ a {
   }
   .info-section .title-container a:not(:first-child) {
     font-size: 12px;
+    margin-left: 5px;
   }
 }
 
@@ -1334,6 +1438,26 @@ a {
   .main-section {
     height: 900px;
     width: 100%;
+  }
+
+  .main-layout {
+    padding: 0;
+  }
+
+  .create-account h2 {
+    font-size: 25px;
+  }
+
+  .account-text {
+    font-size: 14px;
+  }
+
+  .div3 {
+    padding: 26px 28px;
+  }
+
+  .footer-wrapper {
+    padding: 72px 10px;
   }
 
   .desktop-nav-buttons {
@@ -1377,7 +1501,7 @@ a {
   }
 
   .header-section nav {
-    padding: 0;
+    padding: 30px 0;
     height: 7vh;
   }
 
@@ -1597,20 +1721,6 @@ a {
   overflow: hidden;
   z-index: 2;
 }
-.hero-banner__bg-shape1 {
-  position: absolute;
-  left: 20px;
-  top: 100px;
-  width: 759px;
-  height: 759px;
-  border-radius: 50%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.09) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  box-shadow: 54px 24px 39px 0px rgba(var(--eduact-black2-rgb), 0.02);
-}
 
 @media (max-width: 1199px) {
   .hero-banner__bg-shape1 {
@@ -1809,19 +1919,44 @@ a {
 .lectures {
   margin-top: 150px;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 150px;
+  column-gap: 20px;
 }
 
-.lecture-card {
-  width: 456px;
-  background-color: #fff;
-  min-height: 300px;
-  position: relative;
-  padding: 28px 30px 30px;
-  box-shadow: 11px 15px 30px 0px rgba(128, 137, 225, 0.1);
-  border: 1px solid transparent;
-  border-radius: 14px;
+@media screen and (max-width: 1675px) {
+  .lectures {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+
+  .lecture-card {
+    width: 100%;
+  }
+
+  .course-details {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .lectures {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lecture-card {
+    width: 100%;
+  }
+
+  .course-details {
+    margin-top: 30px;
+  }
+
+  .time-div {
+    margin-top: -15%;
+    width: fit-content;
+  }
 }
 
 .lecture-card:hover {
@@ -1896,6 +2031,13 @@ a {
   color: #f57005;
 }
 
+@media screen and (max-width: 900px) {
+  .lecture-card {
+    width: 100%;
+    margin-bottom: 160px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .lectures {
     display: grid;
@@ -1915,20 +2057,11 @@ a {
     font-size: 18px;
   }
 
-  .lecture-card {
-    width: 100%;
-    margin-bottom: 160px;
-  }
-
   .course-details-price-container {
     width: 60px;
   }
 
   .course-details-length {
     font-size: 12px;
-  }
-
-  .time-div {
-    width: 25%;
   }
 }

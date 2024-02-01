@@ -126,9 +126,7 @@ body {
   display: flex;
   justify-content: center;
 }
-#lecture-container {
-  margin: 26px 28px;
-}
+
 .fieldset-2 {
   border: none;
   width: 350px;
@@ -289,7 +287,7 @@ legend img {
     margin: 56px 188px;
   }
   #lecture-container {
-    margin: 56px 88px;
+    margin: 56px 135px;
   }
   .lecture-container {
     flex-direction: row;
@@ -545,8 +543,6 @@ legend img {
   height: 100%;
 }
 
-
-
 .input-title,
 .input-message {
   width: 100%;
@@ -770,8 +766,7 @@ a {
   display: none;
 }
 
-
-@media screen and (min-width: 1441px)  {
+@media screen and (min-width: 1441px) {
   .kongo-image-container {
     width: 500px;
     height: 500px;
@@ -783,7 +778,6 @@ a {
     margin-top: 40px;
     z-index: 10;
   }
-  
 
   .banner {
     height: auto;
@@ -796,7 +790,6 @@ a {
   background: #4f5de4;
   color: #fff;
 }
-
 
 .header-section {
   position: fixed;
@@ -869,7 +862,7 @@ a {
   left: 500px;
 }
 
-@media  screen and (min-width: 1700px) {
+@media screen and (min-width: 1700px) {
   .kongo-image-container {
     width: 620px;
     height: 620px;
@@ -879,7 +872,6 @@ a {
     width: 550px;
     height: 550px;
   }
-  
 }
 
 @media screen and (max-width: 1599px) {
@@ -891,12 +883,10 @@ a {
     bottom: 20px;
     left: 350px;
   }
-  
-  
+
   .kongo-image-container {
     width: 500px;
     height: 500px;
-
   }
   .kongo-image-container img {
     width: 450px;
@@ -937,8 +927,6 @@ a {
 .info-section .title-container a:hover {
   cursor: pointer;
 }
-
-
 
 .info-section .title-container a:first-child {
   display: inline-block;
@@ -1188,7 +1176,6 @@ a {
 .graduation-cap-img {
   top: 40px;
 }
-
 
 .star-img-3 {
   position: absolute;
@@ -1817,4 +1804,131 @@ a {
 .course-education-img {
   width: 30px;
   height: 30px;
+}
+
+.lectures {
+  margin-top: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lecture-card {
+  width: 456px;
+  background-color: #fff;
+  min-height: 300px;
+  position: relative;
+  padding: 28px 30px 30px;
+  box-shadow: 11px 15px 30px 0px rgba(128, 137, 225, 0.1);
+  border: 1px solid transparent;
+  border-radius: 14px;
+}
+
+.lecture-card:hover {
+  border: 1px solid #4f5de4;
+  transition: 500ms ease;
+}
+
+.lecturer-pic {
+  position: absolute;
+  top: -120px;
+  right: 10px;
+  background-color: #697585;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lecturer-pic img {
+  width: 226px;
+  height: 228px;
+}
+
+.lecture-div {
+  margin-top: 150px;
+}
+
+.course-title h4 {
+  font-size: 20px;
+  line-height: 29px;
+  max-width: 300px;
+}
+
+.course-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: ; */
+  padding: 14px 19px 15px 19px;
+  border-radius: 6px;
+  background-color: #f1f2fd;
+}
+
+.course-details-author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.course-details-author-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2a254d;
+}
+
+.course-details-subject-name {
+  color: #697585;
+}
+
+.course-details-price {
+  color: #4f5de4;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: end;
+}
+
+.course-details-length {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f57005;
+}
+
+@media screen and (max-width: 769px) {
+  .lectures {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #lecture-container {
+    padding: 0 10px;
+  }
+
+  .course-details-author-name,
+  .course-details-subject-name {
+    font-size: 14px;
+  }
+
+  .course-details-price {
+    font-size: 18px;
+  }
+
+  .lecture-card {
+    width: 100%;
+    margin-bottom: 160px;
+  }
+
+  .course-details-price-container {
+    width: 60px;
+  }
+
+  .course-details-length {
+    font-size: 12px;
+  }
+
+  .time-div {
+    width: 25%;
+  }
 }

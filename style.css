@@ -506,6 +506,10 @@ legend img {
   width: 320px;
 }
 
+textarea {
+  resize: none;
+}
+
 .main-input::placeholder {
   font-size: 16px;
 }
@@ -524,7 +528,7 @@ legend img {
 .input-icon4 {
   position: absolute;
   left: 2%;
-  top: 17%;
+  top: 10%;
 }
 
 .input-div {

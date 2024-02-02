@@ -46,17 +46,23 @@
       </div>
       <div class="sidebar-info-container">
         <p class="sidebar-info">
-          <img src="images/Location.svg" alt="Location" />გამრეკელის 19
+          <img src="images/Location.svg" alt="Location" />დავით გამრეკელის 19
         </p>
-        <p class="sidebar-info">
-          <img src="images/Message.svg" alt="Location" />kontact@kongo.ge
-        </p>
-        <p class="sidebar-info">
-          <img src="images/Call.svg" alt="Location" />554 - 654 - 987
-        </p>
-        <p class="sidebar-info">
-          <img src="images/facebook.svg" alt="Location" />Facebook.com
-        </p>
+        <a href="mailto:contact@kongo.ge" class="sidebar-info">
+          <img src="images/Message.svg" alt="Location" />contact@kongo.ge
+        </a>
+        <a href="tel:522220020" class="sidebar-info">
+          <img src="images/Call.svg" alt="Location" />522 - 22 - 00 - 20
+        </a>
+
+        <a
+          href="https://www.facebook.com/monkeykongo/"
+          class="sidebar-info"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/facebook.svg" alt="Location" /> Facebook.com
+        </a>
       </div>
     </div>
     <section class="main-section">
@@ -180,7 +186,7 @@
             ></path>
           </svg>
         </div>
-        <div class="course-content">
+        <div class="course-content" id="course-content">
           <div>
             <div class="course-content-logo">
               <img
@@ -530,7 +536,7 @@
       <div class="flex-container">
         <img class="cont-img" src="./images/img3.svg" alt="img1" />
         <h3 class="header">7</h3>
-        <span class="span">სამეცადინო პროგრამა</span>
+        <span class="span">უფასო სამეცადინო პროგრამა</span>
       </div>
       <div class="flex-container">
         <img class="cont-img" src="./images/img4.svg" alt="img1" />
@@ -538,7 +544,7 @@
         <span class="span">სიხალისე</span>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <h4 class="subheader">შეფასება</h4>
       <h2 class="subheader-2">მოსწავლეების გამოხმაურება</h2>
       <!-- feedback -->
@@ -551,10 +557,8 @@
               alt="testimonial"
             />
             <p>
-              მოქნილი კლასები გულისხმობს ცოდნის ან უნარების შეძენის პროცესს
-              ციფრული ტექნოლოგიებისა და ინტერნეტის გამოყენებით. მოქნილი კლასები
-              გულისხმობს ცოდნის ან უნარების შეძენის პროცესს ციფრული
-              ტექნოლოგიებისა და ინტერნეტის გამოყენებით.
+              ძალიან კმაყოფილი ვარ უფასო სამეცადინო კურსებით. მოუთმენლად ველი
+              როდის დაიწყება ონლაინ გაკვეთილები, რომ ბავშვებს შევაყვარო საგნები.
             </p>
 
             <div class="testimonial-details-container">
@@ -730,29 +734,39 @@
         </div>
         <div class="grid-item">
           <h2 class="footer-title">აღმოაჩინე</h2>
-          <a>კურსები</a>
-          <a>ლექტორები</a>
-          <a>ვიდეოები</a>
-          <a>შეფასებები</a>
-          <a>კონტაქტი</a>
+          <a href="#course-content">კურსები</a>
+          <a href="#lecture-container">ლექტორები</a>
+          <a href="#slider-container">ვიდეოები</a>
+          <a href="#feedback">შეფასებები</a>
+          <a href="#contact-info">კონტაქტი</a>
         </div>
         <div class="grid-item">
           <h2 class="footer-title">დაგვიკავშირდი</h2>
           <div class="footer-flex-cont">
-            <img src="./images/Location.svg" alt="loc" />
-            <p>გამრეკელის 19</p>
+            <img src="./images/Location.svg" alt="loc" width="24" height="24" />
+            <p>დავით გამრეკელის 19</p>
           </div>
           <div class="footer-flex-cont">
-            <img src="./images/orangechat.svg" alt="loc" />
-            <p>contact@kongo.ge</p>
+            <img
+              src="./images/orangechat.svg"
+              alt="loc"
+              width="24"
+              height="24"
+            />
+            <a href="mailto:contact@kongo.ge">contact@kongo.ge</a>
           </div>
           <div class="footer-flex-cont">
-            <img src="./images/Call.svg" alt="loc" />
-            <p>554-654-987</p>
+            <img src="./images/Call.svg" alt="loc" width="24" height="24" />
+            <a href="tel:522220020">522-22-00-20</a>
           </div>
           <div class="footer-flex-cont">
-            <img src="./images/fb.svg" alt="loc" />
-            <a>facebook.com</a>
+            <img src="./images/fb.svg" alt="loc" width="24" height="24" />
+            <a
+              href="https://www.facebook.com/monkeykongo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >facebook.com</a
+            >
           </div>
         </div>
       </main>

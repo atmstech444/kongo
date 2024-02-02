@@ -864,6 +864,10 @@ a {
   padding: 0 135px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .info-section {
   display: flex;
   align-items: center;

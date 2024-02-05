@@ -1,5 +1,3 @@
-//first slider
-
 const imageContainer = document.getElementById("image-container");
 const sliderCirclesContainer = document.getElementById("slider-circles");
 
@@ -57,8 +55,6 @@ function resetInterval() {
 
 setActiveCircle(activeCircleIndex);
 resetInterval();
-
-//second slider
 
 const formContainer = document.getElementById("form-container");
 const sliderCircleLecture = document.getElementById("slider-circle-lecture");
@@ -123,8 +119,6 @@ setActiveFormCircle(activeFormCircleIndex);
 resetFormInterval();
 showFormSlide(0);
 
-//mariami
-
 document.addEventListener("DOMContentLoaded", function () {
   const fieldsets = document.querySelectorAll(".fieldset");
   let currentFieldsetIndex = 0;
@@ -161,14 +155,28 @@ document.addEventListener("DOMContentLoaded", function () {
   showFieldset(currentFieldsetIndex);
 });
 
-//anri
-
 const sidebar = document.getElementById("sidebar");
 const sidebarTrigger = document.getElementById("sidebar__trigger");
 const sidebarCloseButton = document.getElementById("sidebar__close__button");
 
 function toggleSidebar() {
   sidebar.classList.toggle("isClosed");
+}
+
+function handleSidebarLinkClick(event) {
+  if (event.target.classList.contains("sidebar-link")) {
+    toggleSidebar();
+    const targetSectionId = event.target.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetSectionId);
+
+    if (targetSection) {
+      event.preventDefault();
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }
 }
 
 sidebarTrigger.addEventListener("click", toggleSidebar);
@@ -181,6 +189,12 @@ document.addEventListener("click", (event) => {
   if (!isClickInsideSidebar && !sidebar.classList.contains("isClosed")) {
     toggleSidebar();
   }
+});
+
+// Add event listener for sidebar link clicks
+const sidebarLinks = document.querySelectorAll(".sidebar-link");
+sidebarLinks.forEach((link) => {
+  link.addEventListener("click", handleSidebarLinkClick);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

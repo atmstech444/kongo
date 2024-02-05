@@ -164,9 +164,16 @@ function toggleSidebar() {
 }
 
 function handleSidebarLinkClick(event) {
-  if (event.target.classList.contains("sidebar-link")) {
+  let targetElement = event.target;
+
+  // Check if the clicked element or its parent is a sidebar link
+  while (targetElement && !targetElement.classList.contains("sidebar-link")) {
+    targetElement = targetElement.parentElement;
+  }
+
+  if (targetElement) {
     toggleSidebar();
-    const targetSectionId = event.target.getAttribute("href").substring(1);
+    const targetSectionId = targetElement.getAttribute("href").substring(1);
     const targetSection = document.getElementById(targetSectionId);
 
     if (targetSection) {
@@ -300,83 +307,6 @@ if (scrollTopBtn) {
     false
   );
 }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const testimonialTextContainer = document.querySelector(
-//     ".testimonial-text-container"
-//   );
-//   const testimonialText = document.querySelector(".testimonial-text");
-//   const testimonialAuthor = document.querySelector(".testimonial-author");
-//   const testimonialAuthorPosition = document.querySelector(
-//     ".testimonial-author-position"
-//   );
-//   const prevButton = document.querySelector(".testimonial-prev-arrow-btn");
-//   const nextButton = document.querySelector(".testimonial-next-arrow-btn");
-
-//   const testimonials = [
-//     {
-//       text: "ძალიან კმაყოფილი ვარ უფასო სამეცადინო კურსებით. მოუთმენლად ველი როდის დაიწყება ონლაინ გაკვეთილები, რომ ბავშვებს შევაყვარო საგნები.",
-//       author: "სახელი გვარი",
-//       position: "მოსწავლე",
-//     },
-//     {
-//       text: "1 წელია უკვე ამ საიტით ვსარგებლობთ მეც და ჩემი შვილებიც. მივესალმები თქვენს წამოწყებას!",
-//       author: "სახელი გვარი",
-//       position: "მშობელი",
-//     },
-//     {
-//       text: "ვაფასებ თქვენს შრომას და ღვაწლს, თამაშ-თამაშით ჩემი შვილს შეუყვარდა საგნების შესწავლა. ძალიან სახალისო და საინტერესოა, წარმატებები.",
-//       author: "სახელი გვარი",
-//       position: "მშობელი",
-//     },
-//     {
-//       text: "ძალიან კარგია ასეთი სავარჯიშოები, როგორც პატარასთვის ასევე მოზრდილებისთვისაც. ყველაფერი მომწონს კონგოში. დიდი სიამოვნებით დავასწრებ თქვენს გაკვეთილებს.",
-//       author: "სახელი გვარი",
-//       position: "მშობელი",
-//     },
-//   ];
-
-//   let currentIndex = 0;
-
-//   function updateTestimonial() {
-//     const currentTestimonial = testimonials[currentIndex];
-
-//     testimonialText.innerText = currentTestimonial.text;
-//     testimonialAuthor.innerText = currentTestimonial.author;
-//     testimonialAuthorPosition.innerText = currentTestimonial.position;
-
-//     testimonialTextContainer.animate(
-//       [{ transform: "translateX(100%)" }, { transform: "translateX(0)" }],
-//       {
-//         duration: 1000, // Adjust the duration here (in milliseconds)
-//         easing: "ease-in-out",
-//         fill: "forwards", // Keep the final state after the animation
-//       }
-//     );
-
-//     // Increment index for the next testimonial
-//     currentIndex = (currentIndex + 1) % testimonials.length;
-//   }
-//   function showNextTestimonial() {
-//     currentIndex = (currentIndex + 1) % testimonials.length;
-//     updateTestimonial();
-//   }
-
-//   function showPrevTestimonial() {
-//     currentIndex =
-//       (currentIndex - 1 + testimonials.length) % testimonials.length;
-//     updateTestimonial();
-//   }
-
-//   // Initial testimonial update
-//   updateTestimonial();
-
-//   // Set interval to update testimonial every 8 seconds (adjust as needed)
-//   setInterval(updateTestimonial, 8000);
-
-//   nextButton.addEventListener("click", showNextTestimonial);
-//   prevButton.addEventListener("click", showPrevTestimonial);
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const testimonialTextContainer = document.querySelector(

@@ -361,10 +361,13 @@ legend img {
 
 /* mariami */
 .info {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 100px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 125px;
 }
 
 .flex-container {
@@ -389,7 +392,8 @@ legend img {
 
 @media (max-width: 799px) {
   .info {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
   .counter-dot {
     position: relative;

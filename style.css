@@ -14,6 +14,7 @@ body {
   padding: 0;
   font-family: "FiraGO", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 .name {
@@ -1201,7 +1202,8 @@ a {
 }
 
 .info-section .title-container a:not(:first-child),
-.header-button {
+.header-button,
+.contact-button {
   border-radius: 4px;
   border: 1px solid #fff;
   background-color: transparent;
@@ -1226,7 +1228,8 @@ a {
 }
 
 .info-section .title-container a:not(:first-child) .curve,
-.authorization-button .curve {
+.authorization-button .curve,
+.contact-button .curve {
   position: absolute;
   right: -15px;
   top: 0;
@@ -1244,20 +1247,27 @@ a {
   -o-transition: all 0.5s ease;
 }
 
-.authorization-button {
+.authorization-button,
+.contact-button {
   padding: 12px 30px;
   background-color: #f57005;
 }
 
-.header-button:hover {
+.header-button:hover,
+.contact-button:hover {
   cursor: pointer;
 }
 
-.info-section .title-container a:not(:first-child):hover .curve {
+.info-section .title-container a:not(:first-child):hover .curve,
+.contact-button:hover .curve {
   right: 0;
   width: 100%;
   -webkit-transform: skewX(0deg);
   transform: skewX(0deg);
+}
+
+.contact-button {
+  margin-left: 0;
 }
 
 .info-section .title-container h1 {
@@ -2219,6 +2229,10 @@ a:active {
 
   .course-details-price-container {
     width: 60px;
+  }
+
+  .feedback {
+    padding: 0 10px;
   }
 
   .course-details-length {

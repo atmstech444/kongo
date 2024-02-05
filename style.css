@@ -2242,11 +2242,16 @@ a:active {
 
 .testimonial-text-container {
   max-width: 700px;
+  min-height: 300px;
 }
 
 .testimonial-text-container p {
   font-size: 20px;
   line-height: 37px;
+}
+
+.testimonial-text {
+  height: 120px;
 }
 
 .testimonial-author {
@@ -2307,6 +2312,9 @@ a:active {
 
 .testimonial-slider-buttons {
   display: flex;
+  position: absolute;
+  bottom: 90px;
+  right: 50%;
 }
 
 .testimonial-slider-btn {
@@ -2323,6 +2331,7 @@ a:active {
 .testimonial-slider-btn:hover {
   background-color: #4f5de4;
   transition: 500ms ease;
+  cursor: pointer;
 }
 
 .testimonial-slider-btn:hover svg path {
@@ -2361,6 +2370,11 @@ a:active {
     max-width: 100%;
   }
 
+  .testimonial-slider-buttons {
+    top: 215px;
+    right: 25%;
+  }
+
   .feedback-image-container {
     position: relative;
     left: 0;
@@ -2394,6 +2408,23 @@ a:active {
   .feedback-container {
     padding: 0 10px;
     margin-top: 100px;
+  }
+
+  .testimonial-details-container {
+    margin-top: 0;
+  }
+
+  .testimonial-text {
+    height: 240px;
+  }
+
+  .testimonial-slider-buttons {
+    top: 37%;
+    right: 30px;
+  }
+
+  .testimonial-text {
+    height: auto;
   }
 
   .feedback-image-container {
@@ -2489,4 +2520,14 @@ a:active {
 .content {
   max-width: 640px;
   margin: 0 auto;
+}
+
+.testimonial-slider {
+  display: flex; /* Ensures items are placed in a row */
+  transition: transform 0.5s ease; /* Add a transition for smooth animation */
+}
+
+/* Add this class to the parent container of your testimonial items */
+.testimonial-slider.transition {
+  transition: transform 0.5s ease;
 }

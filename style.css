@@ -2098,6 +2098,12 @@ a {
   }
 }
 
+@media (min-width: 970px) and (max-width: 1200px) {
+  .subheader-2 {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (max-width: 969px) {
   .lectures {
     grid-template-columns: repeat(1, 1fr);
@@ -2105,7 +2111,7 @@ a {
   }
 
   .subheader-2 {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2249,6 +2255,11 @@ a:active {
   min-height: 300px;
 }
 
+.testimonial-student-img {
+  border-radius: 50%;
+  margin-top: -70px;
+}
+
 .testimonial-text-container p {
   font-size: 20px;
   line-height: 37px;
@@ -2279,6 +2290,7 @@ a:active {
 
 .feedback-subgroup {
   position: relative;
+  /* overflow-x: hidden; */
 }
 
 .feedback-image-container {
@@ -2396,10 +2408,6 @@ a:active {
   .about-us-section .about-us-container .about-us-info {
     justify-self: self-start;
   }
-
-  .subheader-2 {
-    margin-bottom: 100px;
-  }
 }
 
 @media (min-width: 545px) and (max-width: 770px) {
@@ -2411,7 +2419,12 @@ a:active {
 @media screen and (max-width: 769px) {
   .feedback-container {
     padding: 0 10px;
-    margin-top: 100px;
+    margin-top: 50px;
+    overflow-x: hidden;
+  }
+
+  .testimonial-student-img {
+    margin-top: 30px;
   }
 
   .testimonial-details-container {
@@ -2419,7 +2432,7 @@ a:active {
   }
 
   .testimonial-text {
-    height: 240px;
+    height: 120px;
   }
 
   .testimonial-slider-buttons {
@@ -2444,6 +2457,18 @@ a:active {
 @media screen and (max-width: 540px) {
   .student {
     width: 100%;
+  }
+
+  .testimonial-text {
+    height: 220px;
+  }
+
+  .testimonial-text-container {
+    margin-bottom: 30px;
+  }
+
+  .testimonial-slider-buttons {
+    top: 42%;
   }
 }
 

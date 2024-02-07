@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Kongo</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
     />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <div class="custom-cursor__cursor"></div>
@@ -54,7 +55,6 @@
         <a href="tel:522220020" class="sidebar-info">
           <img src="images/Call.svg" alt="Location" />522 - 22 - 00 - 20
         </a>
-
         <a
           href="https://www.facebook.com/monkeykongo/"
           class="sidebar-info"
@@ -65,96 +65,109 @@
         </a>
       </div>
     </div>
-    <section class="main-section">
-      <header class="header-section">
-        <nav>
-          <a href="#" class="header-logo">
-            <img src="images/logo.gif" alt="kongo logo" />
-          </a>
-          <div class="nav-links">
-            <a href="#" class="custom-hover">მთავარი</a>
-            <a href="#info" class="custom-hover">ჩვენ შესახებ</a>
-            <a href="#courses" class="custom-hover">სერვისები</a>
-            <a href="#contact" class="custom-hover">კონტაქტი</a>
-          </div>
-          <div class="menu-container">
-            <button id="sidebar__trigger" class="sidebar__button custom-hover">
-              <img src="images/Menu.svg" width="32" height="32" alt="menu" />
-            </button>
+    <header class="header">
+      <nav class="container navbar">
+        <a href="#" class="header-logo">
+          <img src="images/logo.gif" width="59" height="47" alt="kongo logo" />
+        </a>
+        <div class="nav-links">
+          <a href="#" class="custom-hover">მთავარი</a>
+          <a href="#info" class="custom-hover">ჩვენ შესახებ</a>
+          <a href="#courses" class="custom-hover">სერვისები</a>
+          <a href="#contact" class="custom-hover">კონტაქტი</a>
+        </div>
 
-            <div class="desktop-nav-buttons">
-              <button class="header-button authorization-button custom-hover">
-                <span class="curve"></span>
-                ავტორიზაცია
-              </button>
-              <button class="header-button custom-hover">რეგისტრაცია</button>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="info-section">
-        <img src="/images/banner-bg-1.png" alt="banner" class="banner" />
+        <div class="navbar-auth-buttons">
+          <button class="header-button authorization-button custom-hover">
+            <span class="curve"></span>
+            ავტორიზაცია
+          </button>
+          <button class="header-button custom-hover">რეგისტრაცია</button>
+        </div>
+        <button
+          id="sidebar__trigger"
+          class="sidebar__button custom-hover burger-menu"
+        >
+          <img src="images/Menu.svg" width="32" height="32" alt="menu" />
+        </button>
+      </nav>
+    </header>
+
+    <section class="main-section">
+      <img src="/images/banner-bg-1.png" alt="banner" class="banner" />
+      <div class="container">
         <div class="hero-banner__bg-shape1 hero-banner__bg-shape1 wow zoomIn">
           <div class="hero-banner__bg-round">
             <div class="hero-banner__bg-round-border"></div>
           </div>
         </div>
-        <div class="title-container">
+        <div class="main-info-section">
           <div>
-            <h1>საგანმანათლებლო თავგადასავალი მაიმუნ კონგოსთან</h1>
+            <h1 class="info-title">
+              საგანმანათლებლო თავგადასავალი მაიმუნ კონგოსთან
+            </h1>
+            <div class="info-links">
+              <a href="#info" class="custom-hover">
+                <span class="curve"></span>გაიგე მეტი
+                <img src="images/arrow.svg" />
+              </a>
+              <a
+                href="#slider-container"
+                class="custom-hover"
+                style="border: 1px solid #fff"
+              >
+                <span class="curve"></span>კურსის მოძებნა
+                <img src="images/arrow.svg" />
+              </a>
+            </div>
+            <img
+              class="curled-arrow-img"
+              src="images/curled-arrow.png"
+              alt=""
+            />
           </div>
-          <div class="title-buttons-container">
-            <a href="#info" class="custom-hover">
-              <span class="curve"></span>გაიგე მეტი
-              <img src="images/arrow.svg" />
-            </a>
-            <a
-              href="#slider-container"
-              class="custom-hover"
-              style="border: 1px solid #fff"
-            >
-              <span class="curve"></span>კურსის მოძებნა
-              <img src="images/arrow.svg" />
-            </a>
-          </div>
-          <img class="curled-arrow-img" src="images/curled-arrow.png" alt="" />
-        </div>
-        <div class="images-container">
-          <div>
-            <img
-              class="graduation-cap-img"
-              src="/images/graduation-cap.png"
-              alt="graduation cap"
-            />
-            <img
-              class="division-img"
-              src="/images/division.png"
-              alt="division logo"
-              width="102"
-              height="74"
-            />
-            <img class="star-img-3" src="images/star.png" alt="star" />
-            <img class="star-img-4" src="images/star.png" alt="star" />
-            <img class="earth-img" src="images/earth.png" alt="earth" />
-            <img class="book-img" src="images/book.png" alt="book" />
-            <img class="star-img" src="images/star.png" alt="star" />
-            <img
-              class="star-img-2"
-              width="49"
-              height="49"
-              src="images/star.png"
-              alt="star"
-            />
-            <div class="kongo-image-container">
-              <img src="/images/kongo-image.png" alt="kongo-image" />
+          <div class="images-container">
+            <div class="info-images-container">
+              <div class="kongo-image-container">
+                <img
+                  class="graduation-cap-img"
+                  src="/images/graduation-cap.png"
+                  alt="graduation cap"
+                />
+                <img
+                  class="division-img"
+                  src="/images/division.png"
+                  alt="division logo"
+                  width="102"
+                  height="74"
+                />
+                <img class="star-img-3" src="images/star.png" alt="star" />
+                <img class="star-img-4" src="images/star.png" alt="star" />
+                <img class="earth-img" src="images/earth.png" alt="earth" />
+                <img class="book-img" src="images/book.png" alt="book" />
+                <img class="star-img" src="images/star.png" alt="star" />
+                <img
+                  class="star-img-2"
+                  width="49"
+                  height="49"
+                  src="images/star.png"
+                  alt="star"
+                />
+                <img
+                  src="/images/kongo-image.png"
+                  class="kongo-info-image"
+                  alt="kongo-image"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="courses" class="courses-section">
-      <div class="courses-container">
+    <!-- courses section -->
+    <section class="courses-section" id="courses">
+      <div class="container courses-container" style="margin-top: 40px">
         <div class="course-content">
           <div class="course-content-details">
             <div class="course-content-logo">
@@ -162,13 +175,12 @@
                 src="images/education.png"
                 alt="education"
                 class="course-education-img"
+                width="32"
+                height="32"
               />
             </div>
             <h3>მათემატიკა</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
-              hendrerit diam. Mauris cursus suscipit
-            </p>
+            <p></p>
             <a class="content-link" href="#"
               >გაიგე მეტი
               <img src="images/arrow-blue.svg" alt="blue arrow right"
@@ -186,20 +198,19 @@
             ></path>
           </svg>
         </div>
-        <div class="course-content" id="course-content">
-          <div>
+        <div class="course-content">
+          <div class="course-content-details">
             <div class="course-content-logo">
               <img
                 src="images/education.png"
                 alt="education"
                 class="course-education-img"
+                width="32"
+                height="32"
               />
             </div>
             <h3>ჭადრაკი</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
-              hendrerit diam. Mauris cursus suscipit
-            </p>
+            <p></p>
             <a class="content-link" href="#"
               >გაიგე მეტი
               <img src="images/arrow-blue.svg" alt="blue arrow right"
@@ -218,19 +229,18 @@
           </svg>
         </div>
         <div class="course-content">
-          <div>
+          <div class="course-content-details">
             <div class="course-content-logo">
               <img
                 src="images/education.png"
                 alt="education"
                 class="course-education-img"
+                width="32"
+                height="32"
               />
             </div>
             <h3>ქართული</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
-              hendrerit diam. Mauris cursus suscipit
-            </p>
+            <p></p>
             <a class="content-link" href="#"
               >გაიგე მეტი
               <img src="images/arrow-blue.svg" alt="blue arrow right"
@@ -249,19 +259,18 @@
           </svg>
         </div>
         <div class="course-content">
-          <div>
+          <div class="course-content-details">
             <div class="course-content-logo">
               <img
                 src="images/education.png"
                 alt="education"
                 class="course-education-img"
+                width="32"
+                height="32"
               />
             </div>
             <h3>ინგლისური</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id
-              hendrerit diam. Mauris cursus suscipit
-            </p>
+            <p></p>
             <a class="content-link" href="#"
               >გაიგე მეტი
               <img src="images/arrow-blue.svg" alt="blue arrow right"
@@ -281,8 +290,10 @@
         </div>
       </div>
     </section>
-    <section id="info" class="about-us-section">
-      <div class="about-us-container">
+
+    <!-- about us section -->
+    <section id="info" class="about-us-section" style="padding-bottom: 72px">
+      <div class="container about-us-container" style="margin-top: 40px">
         <img src="images/kongo-studying.png" alt="kongo studying" />
         <div class="about-us-info">
           <h3>ჩვენ შესახებ</h3>
@@ -309,471 +320,239 @@
       </div>
     </section>
 
-    <div class="div3" id="vision-info" style="margin-bottom: 100px">
-      <div class="container">
-        <h3 class="name">ღირებულება</h3>
-        <p class="info-info">
-          რთული გამოწვევბის სახალისო გზებით გადაჭრა თავგადასავლების მუდმივი
-          ძიება კრეატიულად აზროვნება სწავლა მეგობრულ გარემოში
-        </p>
-      </div>
+    <section class="vision-container" id="vision-info">
+      <div class="container vision-container-padding">
+        <div class="div3">
+          <div>
+            <h3 class="name">ღირებულება</h3>
+            <p class="div3-info">
+              რთული გამოწვევბის სახალისო გზებით გადაჭრა თავგადასავლების მუდმივი
+              ძიება კრეატიულად აზროვნება სწავლა მეგობრულ გარემოში
+            </p>
+          </div>
 
-      <div class="container">
-        <h3 class="name">ხედვა</h3>
-        <p class="info-info">
-          ერთი შეხედვით რთულად შესასწავლი საგნები, შესაძლოა ბავშვების საყვარელ
-          აღმოჩენდებად იქცეს, როცა მას სახალისო და ცოცხალ გარემოში ეცნობიან, მათ
-          საყვარელ მეგობართან ერთად.
-        </p>
-      </div>
+          <div>
+            <h3 class="name">ხედვა</h3>
+            <p class="div3-info">
+              ერთი შეხედვით რთულად შესასწავლი საგნები, შესაძლოა ბავშვების
+              საყვარელ აღმოჩენდებად იქცეს, როცა მას სახალისო და ცოცხალ გარემოში
+              ეცნობიან, მათ საყვარელ მეგობართან ერთად.
+            </p>
+          </div>
 
-      <div class="container">
-        <h3 class="name">მისია</h3>
-        <p class="info-info">
-          ვაქციოთ ბავშვებისთვის საგნების შესწავლა ყველაზე სახალისო და საყვარელ
-          პროცესად..
-        </p>
+          <div>
+            <h3 class="name">მისია</h3>
+            <p class="div3-info">
+              ვაქციოთ ბავშვებისთვის საგნების შესწავლა ყველაზე სახალისო და
+              საყვარელ პროცესად..
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
+    <!-- video lectures -->
     <div id="slider-container">
       <h3 class="video-text">ვიდეო გაკვეთილები</h3>
       <h2 class="lern">ისწავლე კონგოსთან ერთად</h2>
-      <div id="image-container">
-        <div class="slider-div">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
+      <div class="container">
+        <div id="image-container">
+          <div class="slider-div">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
 
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
+          <div class="slider-div" style="display: none">
+            <img src="./images/image1.png" alt="Image 1" />
+          </div>
         </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
-        <div class="slider-div" style="display: none">
-          <img src="./images/image1.png" alt="Image 1" />
-        </div>
+        <div id="slider-circles" class="slider-circles"></div>
       </div>
-      <div id="slider-circles" class="slider-circles"></div>
     </div>
-
+    <!-- lectures -->
     <div id="lecture-container">
       <h3 class="video-text">საუკეთესო კურსი</h3>
       <h2 class="lern">გამორჩეული ლექტორები ამ თვეში</h2>
-      <div class="lectures">
-        <div class="lecture-card">
-          <div class="lecturer-pic">
-            <img src="/images/empty.jpg" style="border-radius: 50%" />
-          </div>
-          <div class="lecture-div">
-            <div class="time-div">4 საათი</div>
-            <div class="reviews"></div>
-            <div class="course-title">
-              <h4>კონგოს ასისტენტი მათემატიკაში</h4>
+      <div class="container">
+        <div class="lectures">
+          <div class="lecture-card">
+            <div class="lecturer-pic">
+              <img src="/images/empty.jpg" style="border-radius: 50%" />
             </div>
-            <div class="course-details">
-              <div class="course-details-author">
-                <img
-                  src="images/earth.png"
-                  width="44"
-                  height="44"
-                  alt="author-icon"
-                />
+            <div class="lecture-div">
+              <div class="time-div">4 საათი</div>
+              <div class="reviews"></div>
+              <div class="course-title">
+                <h4>კონგოს ასისტენტი მათემატიკაში</h4>
+              </div>
+              <div class="course-details">
+                <div class="course-details-author">
+                  <img
+                    src="images/earth.png"
+                    width="44"
+                    height="44"
+                    alt="author-icon"
+                  />
+                  <div>
+                    <p class="course-details-author-name">სახელი გვარი</p>
+                    <p class="course-details-subject-name">მათემატიკა</p>
+                  </div>
+                </div>
                 <div>
-                  <p class="course-details-author-name">სახელი გვარი</p>
-                  <p class="course-details-subject-name">მათემატიკა</p>
+                  <p class="course-details-price"></p>
+                  <p class="course-details-length">5 გაკვეთილი</p>
                 </div>
               </div>
-              <div>
-                <p class="course-details-price"></p>
-                <p class="course-details-length">5 გაკვეთილი</p>
+            </div>
+          </div>
+          <div class="lecture-card">
+            <div class="lecturer-pic">
+              <img src="/images/empty.jpg" style="border-radius: 50%" />
+            </div>
+            <div class="lecture-div">
+              <div class="time-div">4 საათი</div>
+              <div class="reviews"></div>
+              <div class="course-title">
+                <h4>კონგოს ასისტენტი მათემატიკაში</h4>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="lecture-card">
-          <div class="lecturer-pic">
-            <img src="/images/empty.jpg" style="border-radius: 50%" />
-          </div>
-          <div class="lecture-div">
-            <div class="time-div">4 საათი</div>
-            <div class="reviews"></div>
-            <div class="course-title">
-              <h4>კონგოს ასისტენტი მათემატიკაში</h4>
-            </div>
-            <div class="course-details">
-              <div class="course-details-author">
-                <img
-                  src="images/earth.png"
-                  width="44"
-                  height="44"
-                  alt="author-icon"
-                />
+              <div class="course-details">
+                <div class="course-details-author">
+                  <img
+                    src="images/earth.png"
+                    width="44"
+                    height="44"
+                    alt="author-icon"
+                  />
+                  <div>
+                    <p class="course-details-author-name">სახელი გვარი</p>
+                    <p class="course-details-subject-name">მათემატიკა</p>
+                  </div>
+                </div>
                 <div>
-                  <p class="course-details-author-name">სახელი გვარი</p>
-                  <p class="course-details-subject-name">მათემატიკა</p>
+                  <p class="course-details-price"></p>
+                  <p class="course-details-length">5 გაკვეთილი</p>
                 </div>
               </div>
-              <div>
-                <p class="course-details-price"></p>
-                <p class="course-details-length">5 გაკვეთილი</p>
+            </div>
+          </div>
+          <div class="lecture-card">
+            <div class="lecturer-pic">
+              <img src="/images/empty.jpg" style="border-radius: 50%" />
+            </div>
+            <div class="lecture-div">
+              <div class="time-div">4 საათი</div>
+              <div class="reviews"></div>
+              <div class="course-title">
+                <h4>კონგოს ასისტენტი მათემატიკაში</h4>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="lecture-card">
-          <div class="lecturer-pic">
-            <img src="/images/empty.jpg" style="border-radius: 50%" />
-          </div>
-          <div class="lecture-div">
-            <div class="time-div">4 საათი</div>
-            <div class="reviews"></div>
-            <div class="course-title">
-              <h4>კონგოს ასისტენტი მათემატიკაში</h4>
-            </div>
-            <div class="course-details">
-              <div class="course-details-author">
-                <img
-                  src="images/earth.png"
-                  width="44"
-                  height="44"
-                  alt="author-icon"
-                />
-                <div>
-                  <p class="course-details-author-name">სახელი გვარი</p>
-                  <p class="course-details-subject-name">მათემატიკა</p>
+              <div class="course-details">
+                <div class="course-details-author">
+                  <img
+                    src="images/earth.png"
+                    width="44"
+                    height="44"
+                    alt="author-icon"
+                  />
+                  <div>
+                    <p class="course-details-author-name">სახელი გვარი</p>
+                    <p class="course-details-subject-name">მათემატიკა</p>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <p class="course-details-price"></p>
-                <p class="course-details-length">5 გაკვეთილი</p>
+                <div>
+                  <p class="course-details-price"></p>
+                  <p class="course-details-length">5 გაკვეთილი</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div id="slider-circle-lecture" class="circle"></div>
     </div>
 
-    <div class="create-account">
-      <div class="div1">
-        <h2>შექმენი შენი უფასო ანგარიში</h2>
-        <div class="account-text">
-          <p>
-            დარეგისტრირდი და შემოუერთდი მხიარულ მაიმუნ კონგოს ჯუნგლებს.გაიარე
-            უფასო სამეცადინო პროგრამა და გახდი სახალისო საგანმანათლებლო
-            სამყაროს ნაწილი.
-          </p>
+    <!-- create account -->
 
-          <div class="counter-triangle"></div>
-        </div>
-        <img
-          class="counter-dot"
-          src="images/counter-dot.png"
-          alt="counter dot"
-          width="100"
-          height="100"
-        />
-        <div>
-          <button
-            style="padding: 20px 30px"
-            class="header-button authorization-button mobile-account-button-2 custom-hover"
-          >
-            <span class="curve"></span>
-            შემოგვიერთდი
-            <img src="./images/arrowright2.svg" alt="arrowright" />
-          </button>
-        </div>
-      </div>
-      <button
-        style="padding: 10px 20px"
-        class="header-button authorization-button account-button-2 custom-hover custom-hover"
-      >
-        <span class="curve"></span>
-        შემოგვიერთდი
-        <img src="./images/arrowright2.svg" alt="arrowright" />
-      </button>
-    </div>
+    <section class="create-account">
+      <div class="container">
+        <div class="create-account-container">
+          <div>
+            <h2 class="account-title">შექმენი შენი უფასო ანგარიში</h2>
+            <div class="account-text">
+              <p>
+                დარეგისტრირდი და შემოუერთდი მხიარულ მაიმუნ კონგოს
+                ჯუნგლებს.გაიარე უფასო სამეცადინო პროგრამა და გახდი სახალისო
+                საგანმანათლებლო სამყაროს ნაწილი.
+              </p>
 
-    <!-- mariami -->
-
-    <section class="info">
-      <div class="flex-container">
-        <img class="cont-img" src="./images/img1.svg" alt="img1" />
-        <h3 class="header">10000 +</h3>
-        <span class="span">რეგისტრაცია</span>
-      </div>
-      <div class="flex-container">
-        <img class="cont-img" src="./images/img2.svg" alt="img1" />
-        <h3 class="header">1000 +</h3>
-        <span class="span">უფასო გაცემული სერტიფიკატი</span>
-      </div>
-      <div class="flex-container">
-        <img class="cont-img" src="./images/img3.svg" alt="img1" />
-        <h3 class="header">7</h3>
-        <span class="span">უფასო სამეცადინო პროგრამა</span>
-      </div>
-      <div class="flex-container">
-        <img class="cont-img" src="./images/img4.svg" alt="img1" />
-        <h3 class="header">100%</h3>
-        <span class="span">სიხალისე</span>
-      </div>
-    </section>
-    <section class="feedback" id="feedback">
-      <h4 class="subheader">შეფასება</h4>
-      <h2 class="subheader-2">მოსწავლეების გამოხმაურება</h2>
-      <!-- feedback -->
-      <section class="feedback-subgroup">
-        <div class="feedback-container" id="testimonialContainer">
-          <div class="testimonial-text-container">
-            <img
-              class="testimonial-student-img"
-              src="/images/testimonial-1.png"
-              alt="testimonial student image"
-            />
-            <p class="testimonial-text">
-              ძალიან კმაყოფილი ვარ უფასო სამეცადინო კურსებით. მოუთმენლად ველი
-              როდის დაიწყება ონლაინ გაკვეთილები, რომ ბავშვებს შევაყვარო საგნები.
-            </p>
-
-            <div class="testimonial-details-container">
-              <div>
-                <p class="testimonial-author">გიორგი გვარიშვილი</p>
-                <span class="testimonial-author-position">მოსწავლე</span>
-              </div>
+              <div class="counter-triangle"></div>
             </div>
           </div>
-          <div class="testimonial-slider-buttons">
-            <button class="testimonial-slider-btn testimonial-next-arrow-btn">
-              <svg
-                width="18"
-                height="12"
-                viewBox="0 0 18 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="testimonial-prev-arrow"
-              >
-                <g id="Arrow - Right 3">
-                  <g id="Group 16">
-                    <path
-                      id="Line 14 (Stroke)"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.299805 6.00005C0.299805 5.61345 0.613205 5.30005 0.999805 5.30005L15.9998 5.30005C16.3864 5.30005 16.6998 5.61345 16.6998 6.00005C16.6998 6.38665 16.3864 6.70005 15.9998 6.70005L0.999805 6.70005C0.613205 6.70005 0.299805 6.38665 0.299805 6.00005Z"
-                      fill="#4F5DE4"
-                    />
-                    <path
-                      id="Vector 58 (Stroke)"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M11.5196 0.490768C11.8008 0.225538 12.2439 0.238541 12.5091 0.51981L11.9998 1.00005L11.4905 1.48029C11.2253 1.19902 11.2383 0.755997 11.5196 0.490768ZM11.9998 11.0001L11.4906 10.5198L11.6831 10.3152C11.8058 10.1846 11.9812 9.99765 12.1918 9.77262C12.6129 9.32243 13.1741 8.72023 13.7349 8.11129C14.2965 7.50151 14.8547 6.88832 15.2712 6.41501C15.4102 6.25702 15.5311 6.11729 15.6299 6.00005C15.5311 5.88281 15.4102 5.74308 15.2712 5.58509C14.8547 5.11178 14.2965 4.49859 13.7349 3.88882C13.1741 3.27987 12.6129 2.67767 12.1918 2.22748C11.9812 2.00245 11.8058 1.81553 11.6831 1.68492L11.4905 1.48029L11.9998 1.00005L12.5091 0.51981L12.7033 0.726174C12.8266 0.857431 13.0028 1.04512 13.2141 1.27104C13.6367 1.72274 14.2005 2.32781 14.7647 2.94039C15.3281 3.55213 15.8949 4.1747 16.3222 4.66025C16.535 4.90203 16.7185 5.11592 16.8509 5.27986C16.916 5.36045 16.9768 5.43882 17.0243 5.50712C17.0471 5.54002 17.0762 5.58384 17.1023 5.63215C17.1153 5.65609 17.1343 5.69339 17.1516 5.73939C17.1646 5.7739 17.1998 5.87156 17.1998 6.00005C17.1998 6.12854 17.1646 6.2262 17.1516 6.26071C17.1343 6.30672 17.1153 6.34401 17.1023 6.36795C17.0762 6.41626 17.0471 6.46009 17.0243 6.49298C16.9768 6.56129 16.916 6.63965 16.8509 6.72024C16.7185 6.88418 16.535 7.09807 16.3222 7.33986C15.8949 7.8254 15.3281 8.44798 14.7647 9.05971C14.2005 9.67229 13.6367 10.2774 13.2141 10.7291C13.0028 10.955 12.8266 11.1427 12.7033 11.2739L12.5092 11.4802L11.9998 11.0001ZM11.9998 11.0001L11.4906 10.5198C11.2253 10.801 11.2383 11.2441 11.5196 11.5093C11.8008 11.7746 12.2439 11.7615 12.5092 11.4802L11.9998 11.0001Z"
-                      fill="#4F5DE4"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <button class="testimonial-slider-btn testimonial-prev-arrow-btn">
-              <svg
-                width="18"
-                height="12"
-                viewBox="0 0 18 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Arrow - Right 3">
-                  <g id="Group 16">
-                    <path
-                      id="Line 14 (Stroke)"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.299805 6.00005C0.299805 5.61345 0.613205 5.30005 0.999805 5.30005L15.9998 5.30005C16.3864 5.30005 16.6998 5.61345 16.6998 6.00005C16.6998 6.38665 16.3864 6.70005 15.9998 6.70005L0.999805 6.70005C0.613205 6.70005 0.299805 6.38665 0.299805 6.00005Z"
-                      fill="#4F5DE4"
-                    />
-                    <path
-                      id="Vector 58 (Stroke)"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M11.5196 0.490768C11.8008 0.225538 12.2439 0.238541 12.5091 0.51981L11.9998 1.00005L11.4905 1.48029C11.2253 1.19902 11.2383 0.755997 11.5196 0.490768ZM11.9998 11.0001L11.4906 10.5198L11.6831 10.3152C11.8058 10.1846 11.9812 9.99765 12.1918 9.77262C12.6129 9.32243 13.1741 8.72023 13.7349 8.11129C14.2965 7.50151 14.8547 6.88832 15.2712 6.41501C15.4102 6.25702 15.5311 6.11729 15.6299 6.00005C15.5311 5.88281 15.4102 5.74308 15.2712 5.58509C14.8547 5.11178 14.2965 4.49859 13.7349 3.88882C13.1741 3.27987 12.6129 2.67767 12.1918 2.22748C11.9812 2.00245 11.8058 1.81553 11.6831 1.68492L11.4905 1.48029L11.9998 1.00005L12.5091 0.51981L12.7033 0.726174C12.8266 0.857431 13.0028 1.04512 13.2141 1.27104C13.6367 1.72274 14.2005 2.32781 14.7647 2.94039C15.3281 3.55213 15.8949 4.1747 16.3222 4.66025C16.535 4.90203 16.7185 5.11592 16.8509 5.27986C16.916 5.36045 16.9768 5.43882 17.0243 5.50712C17.0471 5.54002 17.0762 5.58384 17.1023 5.63215C17.1153 5.65609 17.1343 5.69339 17.1516 5.73939C17.1646 5.7739 17.1998 5.87156 17.1998 6.00005C17.1998 6.12854 17.1646 6.2262 17.1516 6.26071C17.1343 6.30672 17.1153 6.34401 17.1023 6.36795C17.0762 6.41626 17.0471 6.46009 17.0243 6.49298C16.9768 6.56129 16.916 6.63965 16.8509 6.72024C16.7185 6.88418 16.535 7.09807 16.3222 7.33986C15.8949 7.8254 15.3281 8.44798 14.7647 9.05971C14.2005 9.67229 13.6367 10.2774 13.2141 10.7291C13.0028 10.955 12.8266 11.1427 12.7033 11.2739L12.5092 11.4802L11.9998 11.0001ZM11.9998 11.0001L11.4906 10.5198C11.2253 10.801 11.2383 11.2441 11.5196 11.5093C11.8008 11.7746 12.2439 11.7615 12.5092 11.4802L11.9998 11.0001Z"
-                      fill="#4F5DE4"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </button>
-          </div>
-          <div class="feedback-image-container">
-            <img src="images/student-pic.png" alt="student" class="student" />
-            <img
-              src="images/testimonial-shape-1.png"
-              alt="pencil"
-              class="testimonial-pencil"
-            />
-          </div>
-        </div>
-      </section>
-    </section>
-    <section id="contact" class="contact-info">
-      <h4 class="subheader">კონტაქტი</h4>
-      <h2 class="subheader-2">გამოგვიგზავნე შეტყობინება</h2>
-      <main class="main-layout">
-        <form class="form">
-          <div class="input-div">
-            <div class="input-wrapper">
-              <input
-                type="text"
-                placeholder="სახელი *"
-                class="main-input"
-                name="name"
-                id="name"
-              />
-              <img
-                src="./images/profiledark.svg"
-                alt="profile"
-                class="input-icon"
-              />
-            </div>
-            <div class="input-wrapper">
-              <input
-                type="text"
-                placeholder="ელ.ფოსტა *"
-                class="main-input"
-                name="email"
-                id="email"
-              />
-              <img
-                src="./images/emaildark.svg"
-                alt="profile"
-                class="input-icon"
-              />
-            </div>
-          </div>
-          <div class="input-wrapper">
-            <input
-              name="title"
-              id="title"
-              type="text"
-              placeholder="სათაური *"
-              class="main-input input-title"
-            />
-            <img src="./images/text.svg" alt="profile" class="input-icon3" />
-          </div>
-          <div class="input-wrapper">
-            <textarea
-              name="message"
-              id="message"
-              rows="10"
-              cols="60"
-              placeholder="შეიყვანე შეტყობინება *"
-              class="main-input input-message"
-            ></textarea>
-            <img
-              src="./images/chatdark.svg"
-              alt="profile"
-              class="input-icon4"
-            />
-          </div>
-          <div class="">
-            <button class="contact-button custom-hover">
+          <div class="create-account-button-container">
+            <button class="create-account-btn">
               <span class="curve"></span>
-              გაგზავნა
+              შემოგვიერთდი
               <img src="./images/arrowright2.svg" alt="arrowright" />
             </button>
-            <button class="header-button custom-hover">რეგისტრაცია</button>
-          </div>
-        </form>
-        <div class="contact-image-container">
-          <img
-            src="./images/three-monkeys.png"
-            width="543"
-            alt="contactimg"
-            class="contact-img"
-          />
-        </div>
-      </main>
-    </section>
-    <footer>
-      <main class="footer-wrapper footer-bg">
-        <div class="grid-item">
-          <img src="./images/giflogo.gif" alt="logo" class="gif-logo" />
-          <div class="footer-text">
-            შემოუერთდეთ კონგოს საგანმანათლებლო ჯუნგლების სამყაროს, ის მუდამ მზად
-            არის შემოგთავაზოთ თავგადასავლებით სავსე მოგზაურობა, რომელიც
-            პატარების დაუვიწყარ შთაბეჭდილებად იქცევა!
           </div>
         </div>
-        <div class="grid-item">
-          <h2 class="footer-title">ბმულები</h2>
-          <a href="#vision-info">მისია და ხედვა</a>
-          <a href="#vision-info">ჩვენი მიდგომა</a>
-        </div>
-        <div class="grid-item">
-          <h2 class="footer-title">აღმოაჩინე</h2>
-          <a href="#course-content">კურსები</a>
-          <a href="#lecture-container">ლექტორები</a>
-          <a href="#slider-container">ვიდეოები</a>
-          <a href="#feedback">შეფასებები</a>
-          <a href="#contact-info">კონტაქტი</a>
-        </div>
-        <div class="grid-item">
-          <h2 class="footer-title">დაგვიკავშირდი</h2>
-          <div class="footer-flex-cont">
-            <img src="./images/Location.svg" alt="loc" width="24" height="24" />
-            <p>დავით გამრეკელის 19</p>
-          </div>
-          <div class="footer-flex-cont">
-            <img
-              src="./images/orangechat.svg"
-              alt="loc"
-              width="24"
-              height="24"
-            />
-            <a href="mailto:contact@kongo.ge">contact@kongo.ge</a>
-          </div>
-          <div class="footer-flex-cont">
-            <img src="./images/Call.svg" alt="loc" width="24" height="24" />
-            <a href="tel:522220020">522-22-00-20</a>
-          </div>
-          <div class="footer-flex-cont">
-            <img src="./images/fb.svg" alt="loc" width="24" height="24" />
-            <a
-              href="https://www.facebook.com/monkeykongo/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >facebook.com</a
-            >
-          </div>
-        </div>
-      </main>
-      <div class="rights-div">
-        <p class="rights">&#169; all rights reserved Copyright 2024</p>
       </div>
-    </footer>
+    </section>
+
+    <div class="container">
+      <div class="statistics-container">
+        <div class="flex-container">
+          <img class="cont-img" src="./images/img1.svg" alt="img1" />
+          <h3 class="stat">10000 +</h3>
+          <span class="span">რეგისტრაცია</span>
+        </div>
+        <div class="flex-container">
+          <img class="cont-img" src="./images/img2.svg" alt="img1" />
+          <h3 class="stat">1000 +</h3>
+          <span class="span">უფასო გაცემული სერტიფიკატი</span>
+        </div>
+        <div class="flex-container">
+          <img class="cont-img" src="./images/img3.svg" alt="img1" />
+          <h3 class="stat">7</h3>
+          <span class="span">უფასო სამეცადინო პროგრამა</span>
+        </div>
+        <div class="flex-container">
+          <img class="cont-img" src="./images/img4.svg" alt="img1" />
+          <div>
+            <h3 class="stat">100%</h3>
+            <span class="span">სიხალისე</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <button
       class="btn-toggle-round scroll-top js-scroll-top"
@@ -807,6 +586,228 @@
       </svg>
     </button>
 
-    <script src="index.js"></script>
+    <!-- feedback -->
+    <div class="feedback-bg">
+      <div class="container" id="feedback">
+        <div class="feedback-container">
+          <div class="feedback-container-title">
+            <h3>შეფასება</h3>
+            <p>მოსწავლეების გამოხმაურება</p>
+          </div>
+          <div class="feedback">
+            <div class="testimonial-text-container">
+              <img
+                class="testimonial-student-img"
+                src="/images/testimonial-1.png"
+                alt="testimonial student image"
+                style="border-radius: 50%"
+              />
+              <p class="testimonial-text"></p>
+
+              <div class="testimonial-details-container">
+                <div>
+                  <p class="testimonial-author"></p>
+                  <span class="testimonial-author-position"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feedback-buttons-container">
+              <button class="testimonial-slider-btn testimonial-next-arrow-btn">
+                <svg
+                  width="18"
+                  height="12"
+                  viewBox="0 0 18 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="testimonial-prev-arrow"
+                >
+                  <g id="Arrow - Right 3">
+                    <g id="Group 16">
+                      <path
+                        id="Line 14 (Stroke)"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.299805 6.00005C0.299805 5.61345 0.613205 5.30005 0.999805 5.30005L15.9998 5.30005C16.3864 5.30005 16.6998 5.61345 16.6998 6.00005C16.6998 6.38665 16.3864 6.70005 15.9998 6.70005L0.999805 6.70005C0.613205 6.70005 0.299805 6.38665 0.299805 6.00005Z"
+                        fill="#4F5DE4"
+                      />
+                      <path
+                        id="Vector 58 (Stroke)"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5196 0.490768C11.8008 0.225538 12.2439 0.238541 12.5091 0.51981L11.9998 1.00005L11.4905 1.48029C11.2253 1.19902 11.2383 0.755997 11.5196 0.490768ZM11.9998 11.0001L11.4906 10.5198L11.6831 10.3152C11.8058 10.1846 11.9812 9.99765 12.1918 9.77262C12.6129 9.32243 13.1741 8.72023 13.7349 8.11129C14.2965 7.50151 14.8547 6.88832 15.2712 6.41501C15.4102 6.25702 15.5311 6.11729 15.6299 6.00005C15.5311 5.88281 15.4102 5.74308 15.2712 5.58509C14.8547 5.11178 14.2965 4.49859 13.7349 3.88882C13.1741 3.27987 12.6129 2.67767 12.1918 2.22748C11.9812 2.00245 11.8058 1.81553 11.6831 1.68492L11.4905 1.48029L11.9998 1.00005L12.5091 0.51981L12.7033 0.726174C12.8266 0.857431 13.0028 1.04512 13.2141 1.27104C13.6367 1.72274 14.2005 2.32781 14.7647 2.94039C15.3281 3.55213 15.8949 4.1747 16.3222 4.66025C16.535 4.90203 16.7185 5.11592 16.8509 5.27986C16.916 5.36045 16.9768 5.43882 17.0243 5.50712C17.0471 5.54002 17.0762 5.58384 17.1023 5.63215C17.1153 5.65609 17.1343 5.69339 17.1516 5.73939C17.1646 5.7739 17.1998 5.87156 17.1998 6.00005C17.1998 6.12854 17.1646 6.2262 17.1516 6.26071C17.1343 6.30672 17.1153 6.34401 17.1023 6.36795C17.0762 6.41626 17.0471 6.46009 17.0243 6.49298C16.9768 6.56129 16.916 6.63965 16.8509 6.72024C16.7185 6.88418 16.535 7.09807 16.3222 7.33986C15.8949 7.8254 15.3281 8.44798 14.7647 9.05971C14.2005 9.67229 13.6367 10.2774 13.2141 10.7291C13.0028 10.955 12.8266 11.1427 12.7033 11.2739L12.5092 11.4802L11.9998 11.0001ZM11.9998 11.0001L11.4906 10.5198C11.2253 10.801 11.2383 11.2441 11.5196 11.5093C11.8008 11.7746 12.2439 11.7615 12.5092 11.4802L11.9998 11.0001Z"
+                        fill="#4F5DE4"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="testimonial-slider-btn testimonial-prev-arrow-btn">
+                <svg
+                  width="18"
+                  height="12"
+                  viewBox="0 0 18 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="testimonial-next-arrow"
+                >
+                  <g id="Arrow - Right 3">
+                    <g id="Group 16">
+                      <path
+                        id="Line 14 (Stroke)"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.299805 6.00005C0.299805 5.61345 0.613205 5.30005 0.999805 5.30005L15.9998 5.30005C16.3864 5.30005 16.6998 5.61345 16.6998 6.00005C16.6998 6.38665 16.3864 6.70005 15.9998 6.70005L0.999805 6.70005C0.613205 6.70005 0.299805 6.38665 0.299805 6.00005Z"
+                        fill="#4F5DE4"
+                      />
+                      <path
+                        id="Vector 58 (Stroke)"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5196 0.490768C11.8008 0.225538 12.2439 0.238541 12.5091 0.51981L11.9998 1.00005L11.4905 1.48029C11.2253 1.19902 11.2383 0.755997 11.5196 0.490768ZM11.9998 11.0001L11.4906 10.5198L11.6831 10.3152C11.8058 10.1846 11.9812 9.99765 12.1918 9.77262C12.6129 9.32243 13.1741 8.72023 13.7349 8.11129C14.2965 7.50151 14.8547 6.88832 15.2712 6.41501C15.4102 6.25702 15.5311 6.11729 15.6299 6.00005C15.5311 5.88281 15.4102 5.74308 15.2712 5.58509C14.8547 5.11178 14.2965 4.49859 13.7349 3.88882C13.1741 3.27987 12.6129 2.67767 12.1918 2.22748C11.9812 2.00245 11.8058 1.81553 11.6831 1.68492L11.4905 1.48029L11.9998 1.00005L12.5091 0.51981L12.7033 0.726174C12.8266 0.857431 13.0028 1.04512 13.2141 1.27104C13.6367 1.72274 14.2005 2.32781 14.7647 2.94039C15.3281 3.55213 15.8949 4.1747 16.3222 4.66025C16.535 4.90203 16.7185 5.11592 16.8509 5.27986C16.916 5.36045 16.9768 5.43882 17.0243 5.50712C17.0471 5.54002 17.0762 5.58384 17.1023 5.63215C17.1153 5.65609 17.1343 5.69339 17.1516 5.73939C17.1646 5.7739 17.1998 5.87156 17.1998 6.00005C17.1998 6.12854 17.1646 6.2262 17.1516 6.26071C17.1343 6.30672 17.1153 6.34401 17.1023 6.36795C17.0762 6.41626 17.0471 6.46009 17.0243 6.49298C16.9768 6.56129 16.916 6.63965 16.8509 6.72024C16.7185 6.88418 16.535 7.09807 16.3222 7.33986C15.8949 7.8254 15.3281 8.44798 14.7647 9.05971C14.2005 9.67229 13.6367 10.2774 13.2141 10.7291C13.0028 10.955 12.8266 11.1427 12.7033 11.2739L12.5092 11.4802L11.9998 11.0001ZM11.9998 11.0001L11.4906 10.5198C11.2253 10.801 11.2383 11.2441 11.5196 11.5093C11.8008 11.7746 12.2439 11.7615 12.5092 11.4802L11.9998 11.0001Z"
+                        fill="#4F5DE4"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="feedback-image-container">
+              <img src="images/student-pic.png" alt="student" class="student" />
+              <img
+                src="images/testimonial-shape-1.png"
+                alt="pencil"
+                class="testimonial-pencil"
+                style="position: absolute"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <section id="contact">
+      <div class="contact-title">
+        <h3>კონტაქტი</h3>
+        <p>გამოგვიგზავნე შეტყობინება</p>
+      </div>
+      <div class="container contact-form-container">
+        <form class="credentials-container">
+          <div class="credentials-inputs">
+            <div class="input-container">
+              <input type="text" class="input" placeholder="სახელი*" />
+              <img
+                src="./images/profiledark.svg"
+                alt="profile"
+                class="input-icon"
+              />
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" placeholder="ელ.ფოსტა*" />
+              <img
+                src="./images/emaildark.svg"
+                alt="profile"
+                class="input-icon"
+              />
+            </div>
+          </div>
+          <div class="contact-message-inputs">
+            <div class="input-container">
+              <input type="text" class="input" placeholder="სათაური*" />
+              <img src="./images/text.svg" alt="profile" class="input-icon" />
+            </div>
+            <div class="input-container">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="input textarea"
+                placeholder="შეიყვანე შეტყობინება*"
+              ></textarea>
+              <img
+                src="./images/chatdark.svg"
+                alt="profile"
+                class="input-icon"
+              />
+            </div>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="authorization-button header-button"
+              style="margin-left: 0"
+            >
+              <span class="curve"></span>
+              გაგზავნა
+            </button>
+          </div>
+        </form>
+        <div>
+          <img
+            src="images/three-monkeys.png"
+            class="three-monkeys-img"
+            alt="monkeys"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="footer-bg">
+      <div class="container footer-container">
+        <div class="grid-item">
+          <img src="images/logo.gif" class="gif-logo" alt="kongo logo" />
+          <p>
+            შემოუერთდეთ კონგოს საგანმანათლებლო ჯუნგლების სამყაროს, ის მუდამ მზად
+            არის შემოგთავაზოთ თავგადასავლებით სავსე მოგზაურობა, რომელიც
+            პატარების დაუვიწყარ შთაბეჭდილებად იქცევა!
+          </p>
+        </div>
+        <div class="grid-item">
+          <h2 class="footer-title">ბმულები</h2>
+          <a href="#vision-info">მისია და ხედვა</a>
+          <a href="#vision-info">ჩვენი მიდგომა</a>
+        </div>
+        <div class="grid-item">
+          <h2 class="footer-title">აღმოაჩინე</h2>
+          <a href="#courses">კურსები</a>
+          <a href="#lecture-container">ლექტორები</a>
+          <a href="#slider-container">ვიდეოები</a>
+          <a href="#feedback">შეფასებები</a>
+          <a href="#contact">კონტაქტი</a>
+        </div>
+        <div class="grid-item">
+          <h2 class="footer-title">დაგვიკავშირდი</h2>
+          <div class="footer-flex-cont">
+            <img src="./images/Location.svg" alt="loc" width="24" height="24" />
+            <p>დავით გამრეკელის 19</p>
+          </div>
+          <div class="footer-flex-cont">
+            <img
+              src="./images/orangechat.svg"
+              alt="loc"
+              width="24"
+              height="24"
+            />
+            <a href="mailto:contact@kongo.ge">contact@kongo.ge</a>
+          </div>
+          <div class="footer-flex-cont">
+            <img src="./images/Call.svg" alt="loc" width="24" height="24" />
+            <a href="tel:522220020">522-22-00-20</a>
+          </div>
+          <div class="footer-flex-cont">
+            <img src="./images/fb.svg" alt="loc" width="24" height="24" />
+            <a
+              href="https://www.facebook.com/monkeykongo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >facebook.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="rights-div">
+      <p class="rights">&#169; all rights reserved Copyright 2024</p>
+    </div>
   </body>
 </html>

@@ -546,9 +546,7 @@ button:hover {
 
 .info-links a:first-child,
 .create-account-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  display: inline-block;
   vertical-align: middle;
   -webkit-appearance: none;
   appearance: none;
@@ -566,10 +564,6 @@ button:hover {
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
-}
-
-.welcome-arrow {
-  padding-top: 2px;
 }
 
 .courses-section {
@@ -979,7 +973,6 @@ button:hover {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  z-index: 99999;
 }
 
 .scroll-top .icon-tabler-arrow-up {

@@ -213,6 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const testimonialAuthorPosition = document.querySelector(
     ".testimonial-author-position"
   );
+  const testimonialImg = document.querySelector(".testimonial-student-img");
   const prevButton = document.querySelector(".testimonial-prev-arrow-btn");
   const nextButton = document.querySelector(".testimonial-next-arrow-btn");
 
@@ -221,82 +222,69 @@ document.addEventListener("DOMContentLoaded", function () {
       text: "ძალიან კმაყოფილი ვარ უფასო სამეცადინო კურსებით. მოუთმენლად ველი როდის დაიწყება ონლაინ გაკვეთილები, რომ ბავშვებს შევაყვარო საგნები.",
       author: "სახელი გვარი",
       position: "მოსწავლე",
+      img: "/images/testimonial-1.png",
     },
     {
       text: "1 წელია უკვე ამ საიტით ვსარგებლობთ მეც და ჩემი შვილებიც. მივესალმები თქვენს წამოწყებას!",
       author: "სახელი გვარი",
       position: "მშობელი",
+      img: "/images/testimonial-1.png",
     },
     {
       text: "ვაფასებ თქვენს შრომას და ღვაწლს, თამაშ-თამაშით ჩემი შვილს შეუყვარდა საგნების შესწავლა. ძალიან სახალისო და საინტერესოა, წარმატებები.",
       author: "სახელი გვარი",
       position: "მშობელი",
+      img: "/images/testimonial-1.png",
     },
     {
       text: "ძალიან კარგია ასეთი სავარჯიშოები, როგორც პატარასთვის ასევე მოზრდილებისთვისაც. ყველაფერი მომწონს კონგოში. დიდი სიამოვნებით დავასწრებ თქვენს გაკვეთილებს.",
       author: "სახელი გვარი",
       position: "მშობელი",
+      img: "/images/testimonial-1.png",
     },
   ];
 
   let currentIndex = 0;
   let intervalId;
 
-  // function updateTestimonial(direction) {
-  //   const currentTestimonial = testimonials[currentIndex];
-
-  //   testimonialText.innerText = currentTestimonial.text;
-  //   testimonialAuthor.innerText = currentTestimonial.author;
-  //   testimonialAuthorPosition.innerText = currentTestimonial.position;
-
-  //   testimonialTextContainer.style.transform = `translateX(${direction})`;
-
-  //   testimonialTextContainer.animate(
-  //     [
-  //       { transform: `translateX(${direction})` },
-  //       { transform: "translateX(0)" },
-  //     ],
-  //     {
-  //       duration: 1000,
-  //       easing: "ease-in-out",
-  //       fill: "forwards",
-  //     }
-  //   );
-  // }
-
   function updateTestimonial(direction) {
     const currentTestimonial = testimonials[currentIndex];
 
-    testimonialText.innerText = currentTestimonial.text;
-    testimonialAuthor.innerText = currentTestimonial.author;
-    testimonialAuthorPosition.innerText = currentTestimonial.position;
-
-    testimonialTextContainer.style.opacity = 0; // Set initial opacity to 0
+    testimonialTextContainer.style.opacity = 0;
     testimonialTextContainer.style.transform = `translateX(${direction})`;
 
-    testimonialTextContainer.animate(
-      [
-        { opacity: 0, transform: `translateX(${direction})` },
-        { opacity: 1, transform: "translateX(0)" },
-      ],
-      {
-        duration: 1000,
-        easing: "ease-in-out",
-        fill: "forwards",
-      }
-    );
+    setTimeout(() => {
+      testimonialText.innerText = currentTestimonial.text;
+      testimonialAuthor.innerText = currentTestimonial.author;
+      testimonialAuthorPosition.innerText = currentTestimonial.position;
+
+      // Update the testimonial image source
+      testimonialImg.src = currentTestimonial.img;
+
+      testimonialTextContainer.animate(
+        [
+          { opacity: 0, transform: `translateX(${direction})` },
+          { opacity: 1, transform: "translateX(0)" },
+        ],
+        {
+          duration: 1000,
+          easing: "ease-in-out",
+          fill: "forwards",
+        }
+      );
+    }, 100);
   }
 
   function showNextTestimonial() {
-    updateTestimonial("100%");
     currentIndex = (currentIndex + 1) % testimonials.length;
+    updateTestimonial("100%");
     resetAndStartTimer();
   }
 
   function showPrevTestimonial() {
-    updateTestimonial("-100%");
     currentIndex =
       (currentIndex - 1 + testimonials.length) % testimonials.length;
+    updateTestimonial("-100%");
     resetAndStartTimer();
   }
 
@@ -306,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Initial testimonial update
-  updateTestimonial("100%");
+  updateTestimonial("0%");
 
   // Set interval to update testimonial every 8 seconds (adjust as needed)
   intervalId = setInterval(showNextTestimonial, 8000);
